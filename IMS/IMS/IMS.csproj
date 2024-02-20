@@ -1,0 +1,507 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EFD539F7-4261-416C-8767-989E9E257579}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>IMS</RootNamespace>
+    <AssemblyName>IMS</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Miyuranga\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>4BD1F5EC6577FC31DB9E5396CC0B2FA8C9615BC4</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>IMS_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.1.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Abstractions, Version=6.23.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Abstractions.6.23.1\lib\net472\Microsoft.IdentityModel.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Logging, Version=6.23.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Logging.6.23.1\lib\net472\Microsoft.IdentityModel.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Protocols, Version=6.23.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Protocols.6.23.1\lib\net472\Microsoft.IdentityModel.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Tokens, Version=6.23.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Tokens.6.23.1\lib\net472\Microsoft.IdentityModel.Tokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Grid.Windows, Version=20.3460.0.48, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Grid.Windows.20.3.0.48\lib\net46\Syncfusion.Grid.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Licensing, Version=20.3460.0.48, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Licensing.20.3.0.48\lib\net46\Syncfusion.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Shared.Base, Version=20.3460.0.48, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Shared.Base.20.3.0.48\lib\net46\Syncfusion.Shared.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Shared.Windows, Version=20.3460.0.48, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Shared.Windows.20.3.0.48\lib\net46\Syncfusion.Shared.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.7.1\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Text.Encodings.Web, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.4.7.1\lib\net461\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.4.7.2\lib\net461\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="C_R_Report\UC_Report.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="C_R_Report\UC_Report.Designer.cs">
+      <DependentUpon>UC_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmalready.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmalready.Designer.cs">
+      <DependentUpon>frmalready.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelect.Designer.cs">
+      <DependentUpon>frmSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWork_Emp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWork_Emp.Designer.cs">
+      <DependentUpon>frmWork_Emp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Genaral.cs" />
+    <Compile Include="General.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="frmMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMessage.Designer.cs">
+      <DependentUpon>frmMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User_Static.cs" />
+    <Compile Include="View\To_List\UC_To_List.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\To_List\UC_To_List.Designer.cs">
+      <DependentUpon>UC_To_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\T_SHIRT_ODER\UC_GET_T_SHIRT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\T_SHIRT_ODER\UC_GET_T_SHIRT.Designer.cs">
+      <DependentUpon>UC_GET_T_SHIRT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\T_SHIRT_ODER\UC_NEW_T_SHIRT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\T_SHIRT_ODER\UC_NEW_T_SHIRT.Designer.cs">
+      <DependentUpon>UC_NEW_T_SHIRT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UC_Add_New_Emp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UC_Add_New_Emp.Designer.cs">
+      <DependentUpon>UC_Add_New_Emp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UC_Access.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UC_Access.Designer.cs">
+      <DependentUpon>UC_Access.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UC_Application_Settin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UC_Application_Settin.Designer.cs">
+      <DependentUpon>UC_Application_Settin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UC_Attendance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UC_Attendance.Designer.cs">
+      <DependentUpon>UC_Attendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UC_change_password.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UC_change_password.Designer.cs">
+      <DependentUpon>UC_change_password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UC_Department.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UC_Department.Designer.cs">
+      <DependentUpon>UC_Department.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UC_EMP_WORK_TYPE.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UC_EMP_WORK_TYPE.Designer.cs">
+      <DependentUpon>UC_EMP_WORK_TYPE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UC_LOGIN.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UC_LOGIN.Designer.cs">
+      <DependentUpon>UC_LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UC_Notice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UC_Notice.Designer.cs">
+      <DependentUpon>UC_Notice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UC_Notice_View.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UC_Notice_View.Designer.cs">
+      <DependentUpon>UC_Notice_View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UC_online_offline_check.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UC_online_offline_check.Designer.cs">
+      <DependentUpon>UC_online_offline_check.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UC_Position.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UC_Position.Designer.cs">
+      <DependentUpon>UC_Position.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UC_User_Login.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UC_User_Login.Designer.cs">
+      <DependentUpon>UC_User_Login.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="C_R_Report\UC_Report.resx">
+      <DependentUpon>UC_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmalready.resx">
+      <DependentUpon>frmalready.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMessage.resx">
+      <DependentUpon>frmMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelect.resx">
+      <DependentUpon>frmSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWork_Emp.resx">
+      <DependentUpon>frmWork_Emp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="View\To_List\UC_To_List.resx">
+      <DependentUpon>UC_To_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\T_SHIRT_ODER\UC_GET_T_SHIRT.resx">
+      <DependentUpon>UC_GET_T_SHIRT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\T_SHIRT_ODER\UC_NEW_T_SHIRT.resx">
+      <DependentUpon>UC_NEW_T_SHIRT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UC_Add_New_Emp.resx">
+      <DependentUpon>UC_Add_New_Emp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UC_Access.resx">
+      <DependentUpon>UC_Access.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UC_Application_Settin.resx">
+      <DependentUpon>UC_Application_Settin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UC_Attendance.resx">
+      <DependentUpon>UC_Attendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UC_change_password.resx">
+      <DependentUpon>UC_change_password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UC_Department.resx">
+      <DependentUpon>UC_Department.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UC_EMP_WORK_TYPE.resx">
+      <DependentUpon>UC_EMP_WORK_TYPE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UC_LOGIN.resx">
+      <DependentUpon>UC_LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UC_Notice.resx">
+      <DependentUpon>UC_Notice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UC_Notice_View.resx">
+      <DependentUpon>UC_Notice_View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UC_online_offline_check.resx">
+      <DependentUpon>UC_online_offline_check.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UC_Position.resx">
+      <DependentUpon>UC_Position.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UC_User_Login.resx">
+      <DependentUpon>UC_User_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="IMS_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sandy_Tsp-04_Single-06.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sandy_Tsp-04_Single-06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jan-Business_report_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jan-Business_report_11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4530765.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{2a0ea127-c8c4-41cf-9150-42ae2fa49b41}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{90f1f4ba-ab5c-4da2-95b9-80971344cf53}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6308.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4565.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\networking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\career-promotion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\access.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\division.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appointment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\woman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\businessman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove-database.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\colorful-gb27f985b9_640.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\colorful-gb27f985b9_640.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\colorful-gb27f985b9_6401.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log-in.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log-in %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alarm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

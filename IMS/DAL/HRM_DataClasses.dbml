@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="HRM" Class="HRM_DataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-EKOD5FK;Initial Catalog=HRM;Integrated Security=True" SettingsObjectName="DAL.Properties.Settings" SettingsPropertyName="HRMConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.DEPARTMENT" Member="DEPARTMENTs">
+    <Type Name="DEPARTMENT">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DEP_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.POSITION" Member="POSITIONs">
+    <Type Name="POSITION">
+      <Column Name="P_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="POSITION_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="D_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BLOOD_GROUP" Member="BLOOD_GROUPs">
+    <Type Name="BLOOD_GROUP">
+      <Column Name="B_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BLOOD_NAME" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LANGUAGE" Member="LANGUAGEs">
+    <Type Name="LANGUAGE">
+      <Column Name="L_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LANGUAGE" Member="LANGUAGE1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GENDER" Member="GENDERs">
+    <Type Name="GENDER">
+      <Column Name="G_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GENDER" Member="GENDER1" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BRANCH" Member="BRANCHes">
+    <Type Name="BRANCH">
+      <Column Name="B_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BRANCH_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ACCESS" Member="ACCESSes">
+    <Type Name="ACCESS">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EMP_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MENU_A" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MENU_B" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MENU_C" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MENU_D" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.STATUS" Member="STATUS">
+    <Type Name="STATUS">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="STATUS" Member="STATUS1" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EMP_INFO" Member="EMP_INFOs">
+    <Type Name="EMP_INFO">
+      <Column Name="EMP_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FRIST_NAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NAME_SURENAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DOB" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="MOBILE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NIC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EMAIL" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BLOOD_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ADDRESS" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="GENDER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CREATE_EMP_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EMP_CREATE_DATE" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="LANGUAGE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="STATUS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.WORK_TYPE" Member="WORK_TYPEs">
+    <Type Name="WORK_TYPE">
+      <Column Name="W_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="W_NAME" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EMP_WORK_INFO" Member="EMP_WORK_INFOs">
+    <Type Name="EMP_WORK_INFO">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EMP_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="B_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RE_EMP_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="W_T_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="P_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="D_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[D/OF_A]" Member="D_OF_A" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="[D/OF_C]" Member="D_OF_C" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="[D/OF_JOIN]" Member="D_OF_JOIN" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="NFC_NUMBER" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ATTENDANCE" Member="ATTENDANCEs">
+    <Type Name="ATTENDANCE">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CODE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DATE" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="IN_TIME" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="OUT_TIME" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NFC_NAME_VIEW" Member="NFC_NAME_VIEWs">
+    <Type Name="NFC_NAME_VIEW">
+      <Column Name="NAME_SURENAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NFC_NUMBER" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EMP_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FRIST_NAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NOTICE" Member="NOTICEs">
+    <Type Name="NOTICE">
+      <Column Name="NO_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="D_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="P_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EMP_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TO_DATE" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="[FROM]" Member="FROM" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="N_TITEL" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="N_BODY" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="N_PUT_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="N_FROM_ALL" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PUT_P_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NOTICE_VIEW" Member="NOTICE_VIEWs">
+    <Type Name="NOTICE_VIEW">
+      <Column Name="NO_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="N_TITEL" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="POSITION_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NAME_SURENAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="D_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="P_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EMP_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[FROM]" Member="FROM" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_SHIRT_SIZE" Member="T_SHIRT_SIZEs">
+    <Type Name="T_SHIRT_SIZE">
+      <Column Name="SIZE_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SIZE_NAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LENGTH" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="WIDTH" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_SHIRT_STOCK" Member="T_SHIRT_STOCKs">
+    <Type Name="T_SHIRT_STOCK">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="T_S_N_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="T_S_SIZE_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="T_STOCK_QUANTITY" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_SHIRT_NAME" Member="T_SHIRT_NAMEs">
+    <Type Name="T_SHIRT_NAME">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="T_NAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PRICE" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_SHIRT_STATES" Member="T_SHIRT_STATEs">
+    <Type Name="T_SHIRT_STATE">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="T_STATES" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SALE_T_SHIRT" Member="SALE_T_SHIRTs">
+    <Type Name="SALE_T_SHIRT">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EMP_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DATE" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="B_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RESIPT_NO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="STATES" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="QUANTITY" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ODER_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="T_S_N_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="T_S_SIZE_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PASS" Member="PASSes">
+    <Type Name="PASS">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EMP_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="USER_NAME" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="PASS" Member="PASS1" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="LOG_IN_OUT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LOCK1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LOCK2" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CREAT_EMP_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CREAT_DATE" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="BRANCH_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Path" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="LAST_L_DATE_TIME" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EMP_TO_DO_LIST" Member="EMP_TO_DO_LISTs">
+    <Type Name="EMP_TO_DO_LIST">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EMP_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NOTE" Type="System.String" DbType="NVarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="START_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="END_DATE" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="STATUS" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TO_DO_LIST_STATES" Member="TO_DO_LIST_STATEs">
+    <Type Name="TO_DO_LIST_STATE">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TO_LIST_Proccess" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

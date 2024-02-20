@@ -1,0 +1,26 @@
+2023-01-19 23:43:28.370 +05:30[INF] Application Is Starting
+2023-01-19 23:43:33.297 +05:30[INF] User profile is available. Using '"C:\\Users\\Miyuranga\\AppData\\Local\\ASP.NET\\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-01-19 23:43:34.214 +05:30[INF] Application started. Press Ctrl+C to shut down.
+2023-01-19 23:43:34.214 +05:30[INF] Hosting environment: "Development"
+2023-01-19 23:43:34.214 +05:30[INF] Content root path: "C:\\Users\\Miyuranga\\Desktop\\Web_API\\Web_API"
+2023-01-19 23:43:34.312 +05:30[INF] "Request starting HTTP/2.0 GET https://localhost:44323/weatherforecast  "
+2023-01-19 23:43:34.944 +05:30[INF] Executing endpoint '"Web_API.Controllers.WeatherForecastController.Get (Web_API)"'
+2023-01-19 23:43:34.966 +05:30[INF] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Web_API.WeatherForecast] Get()" on controller "Web_API.Controllers.WeatherForecastController" ("Web_API").
+2023-01-19 23:43:34.975 +05:30[INF] Executing ObjectResult, writing value of type '"Web_API.WeatherForecast[]"'.
+2023-01-19 23:43:35.035 +05:30[INF] Executed action "Web_API.Controllers.WeatherForecastController.Get (Web_API)" in 64.9873ms
+2023-01-19 23:43:35.037 +05:30[INF] Executed endpoint '"Web_API.Controllers.WeatherForecastController.Get (Web_API)"'
+2023-01-19 23:43:35.042 +05:30[INF] "Request finished in 732.0665ms 200 application/json; charset=utf-8"
+2023-01-19 23:43:35.120 +05:30[INF] "Request starting HTTP/2.0 GET https://localhost:44323/favicon.ico  "
+2023-01-19 23:43:35.129 +05:30[INF] "Request finished in 9.9352ms 404 "
+2023-01-19 23:49:54.942 +05:30[INF] Application Is Starting
+2023-01-19 23:49:58.157 +05:30[INF] User profile is available. Using '"C:\\Users\\Miyuranga\\AppData\\Local\\ASP.NET\\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-01-19 23:50:00.306 +05:30[INF] Application started. Press Ctrl+C to shut down.
+2023-01-19 23:50:00.306 +05:30[INF] Hosting environment: "Development"
+2023-01-19 23:50:00.306 +05:30[INF] Content root path: "C:\\Users\\Miyuranga\\Desktop\\Web_API\\Web_API"
+2023-01-19 23:50:00.499 +05:30[INF] Request starting HTTP/2 GET https://localhost:44323/weatherforecast - -
+2023-01-19 23:50:01.157 +05:30[INF] Executing endpoint '"Web_API.Controllers.WeatherForecastController.Get (Web_API)"'
+2023-01-19 23:50:01.168 +05:30[INF] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Web_API.WeatherForecast] Get()" on controller "Web_API.Controllers.WeatherForecastController" ("Web_API").
+2023-01-19 23:50:01.177 +05:30[INF] Executing "ObjectResult", writing value of type '"Web_API.WeatherForecast[]"'.
+2023-01-19 23:50:01.237 +05:30[INF] Executed action "Web_API.Controllers.WeatherForecastController.Get (Web_API)" in 65.9513ms
+2023-01-19 23:50:01.238 +05:30[INF] Executed endpoint '"Web_API.Controllers.WeatherForecastController.Get (Web_API)"'
+2023-01-19 23:50:01.291 +05:30[INF] Request finished HTTP/2 GET https://localhost:44323/weatherforecast - - - 200 - application/json;+charset=utf-8 793.4954ms

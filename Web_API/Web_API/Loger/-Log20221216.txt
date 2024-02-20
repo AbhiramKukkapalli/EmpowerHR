@@ -1,0 +1,327 @@
+2022-12-16 02:47:13.846 +05:30[INF] Application Is Starting
+2022-12-16 02:47:21.657 +05:30[INF] User profile is available. Using '"C:\\Users\\Miyuranga\\AppData\\Local\\ASP.NET\\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-12-16 02:47:23.488 +05:30[INF] Application started. Press Ctrl+C to shut down.
+2022-12-16 02:47:23.489 +05:30[INF] Hosting environment: "Development"
+2022-12-16 02:47:23.489 +05:30[INF] Content root path: "F:\\HRMS_Project\\Web_API\\Web_API"
+2022-12-16 02:47:23.631 +05:30[INF] "Request starting HTTP/2.0 GET https://localhost:44323/weatherforecast  "
+2022-12-16 02:47:24.375 +05:30[INF] Executing endpoint '"Web_API.Controllers.WeatherForecastController.Get (Web_API)"'
+2022-12-16 02:47:24.429 +05:30[INF] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Web_API.WeatherForecast] Get()" on controller "Web_API.Controllers.WeatherForecastController" ("Web_API").
+2022-12-16 02:47:24.443 +05:30[INF] Executing ObjectResult, writing value of type '"Web_API.WeatherForecast[]"'.
+2022-12-16 02:47:24.634 +05:30[INF] Executed action "Web_API.Controllers.WeatherForecastController.Get (Web_API)" in 200.7332ms
+2022-12-16 02:47:24.637 +05:30[INF] Executed endpoint '"Web_API.Controllers.WeatherForecastController.Get (Web_API)"'
+2022-12-16 02:47:24.639 +05:30[INF] "Request finished in 1010.9184ms 200 application/json; charset=utf-8"
+2022-12-16 02:47:24.741 +05:30[INF] "Request starting HTTP/2.0 GET https://localhost:44323/favicon.ico  "
+2022-12-16 02:47:24.744 +05:30[INF] "Request finished in 3.2848ms 404 "
+2022-12-16 02:47:41.631 +05:30[INF] "Request starting HTTP/1.1 POST https://localhost:44323/api/User/UserTodoList/ application/json 36"
+2022-12-16 02:47:42.322 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.getwatingtodo (Web_API)"'
+2022-12-16 02:47:42.832 +05:30[INF] Route matched with "{action = \"getwatingtodo\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult getwatingtodo(Web_API.Models.EmpToDoList)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-16 02:47:52.916 +05:30[WRN] No type was specified for the decimal column '"Price"' on entity type '"TShirtName"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2022-12-16 02:47:52.991 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-16 02:48:48.806 +05:30[ERR] Failed executing DbCommand ("18,749"ms) [Parameters=["@__UserID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [e].[ID], [e].[EMP_ID], [e].[END_DATE], [e].[NOTE], [e].[START_DATE], [e].[STATUS], [e].[StatusName]\r\nFROM [EMP_TO_DO_LIST] AS [e]\r\nWHERE [e].[EMP_ID] = @__UserID_0"
+2022-12-16 02:49:02.288 +05:30[INF] "Request starting HTTP/1.1 POST https://localhost:44323/api/User/UserTodoList/ application/json 22"
+2022-12-16 02:49:02.291 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.getwatingtodo (Web_API)"'
+2022-12-16 02:49:02.291 +05:30[INF] Route matched with "{action = \"getwatingtodo\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult getwatingtodo(Web_API.Models.EmpToDoList)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-16 02:51:32.216 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-16 02:51:32.223 +05:30[ERR] An exception occurred while iterating over the results of a query for context type '"Web_API.Models.HRMContext"'."\r\n""Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'StatusName'.\r\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)\r\n   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)\r\n   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)\r\n   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)\r\n   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()\r\n   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()\r\n   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)\r\n   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)\r\n   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)\r\n   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)\r\n   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)\r\n   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)\r\n   at System.Data.Common.DbCommand.ExecuteReader()\r\n   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)\r\n   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)\r\n   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)\r\n   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()\r\nClientConnectionId:c5ccaea0-8880-4f79-8340-63d577a439e6\r\nError Number:207,State:1,Class:16"
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'StatusName'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:c5ccaea0-8880-4f79-8340-63d577a439e6
+Error Number:207,State:1,Class:16
+2022-12-16 02:52:20.257 +05:30[ERR] Failed executing DbCommand ("48,033"ms) [Parameters=["@__UserID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [e].[ID], [e].[EMP_ID], [e].[END_DATE], [e].[NOTE], [e].[START_DATE], [e].[STATUS], [e].[StatusName]\r\nFROM [EMP_TO_DO_LIST] AS [e]\r\nWHERE [e].[EMP_ID] = @__UserID_0"
+2022-12-16 02:52:20.258 +05:30[ERR] An exception occurred while iterating over the results of a query for context type '"Web_API.Models.HRMContext"'."\r\n""Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'StatusName'.\r\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)\r\n   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)\r\n   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)\r\n   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)\r\n   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()\r\n   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()\r\n   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)\r\n   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)\r\n   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)\r\n   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)\r\n   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)\r\n   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)\r\n   at System.Data.Common.DbCommand.ExecuteReader()\r\n   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)\r\n   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)\r\n   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)\r\n   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()\r\nClientConnectionId:c5ccaea0-8880-4f79-8340-63d577a439e6\r\nError Number:207,State:1,Class:16"
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'StatusName'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:c5ccaea0-8880-4f79-8340-63d577a439e6
+Error Number:207,State:1,Class:16
+2022-12-16 02:52:21.392 +05:30[INF] Executed action "Web_API.Controllers.UserController.getwatingtodo (Web_API)" in 277443.0194ms
+2022-12-16 02:52:21.393 +05:30[INF] Executed action "Web_API.Controllers.UserController.getwatingtodo (Web_API)" in 199101.7623ms
+2022-12-16 02:52:21.396 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.getwatingtodo (Web_API)"'
+2022-12-16 02:52:21.396 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.getwatingtodo (Web_API)"'
+2022-12-16 02:52:21.401 +05:30[ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'StatusName'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at Web_API.Controllers.UserController.getwatingtodo(EmpToDoList todolist) in F:\HRMS_Project\Web_API\Web_API\Controllers\UserController.cs:line 75
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:c5ccaea0-8880-4f79-8340-63d577a439e6
+Error Number:207,State:1,Class:16
+2022-12-16 02:52:21.401 +05:30[ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'StatusName'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at Web_API.Controllers.UserController.getwatingtodo(EmpToDoList todolist) in F:\HRMS_Project\Web_API\Web_API\Controllers\UserController.cs:line 75
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:c5ccaea0-8880-4f79-8340-63d577a439e6
+Error Number:207,State:1,Class:16
+2022-12-16 02:52:21.863 +05:30[INF] "Request finished in 280232.2876ms 500 text/plain"
+2022-12-16 02:52:21.863 +05:30[INF] "Request finished in 199575.6442ms 500 text/plain"
+2022-12-16 02:53:23.322 +05:30[INF] Application Is Starting
+2022-12-16 02:53:24.545 +05:30[INF] User profile is available. Using '"C:\\Users\\Miyuranga\\AppData\\Local\\ASP.NET\\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-12-16 02:53:24.861 +05:30[INF] Application started. Press Ctrl+C to shut down.
+2022-12-16 02:53:24.863 +05:30[INF] Hosting environment: "Development"
+2022-12-16 02:53:24.863 +05:30[INF] Content root path: "F:\\HRMS_Project\\Web_API\\Web_API"
+2022-12-16 02:53:24.911 +05:30[INF] "Request starting HTTP/2.0 GET https://localhost:44323/weatherforecast  "
+2022-12-16 02:53:25.047 +05:30[INF] Executing endpoint '"Web_API.Controllers.WeatherForecastController.Get (Web_API)"'
+2022-12-16 02:53:25.067 +05:30[INF] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Web_API.WeatherForecast] Get()" on controller "Web_API.Controllers.WeatherForecastController" ("Web_API").
+2022-12-16 02:53:25.073 +05:30[INF] Executing ObjectResult, writing value of type '"Web_API.WeatherForecast[]"'.
+2022-12-16 02:53:25.112 +05:30[INF] Executed action "Web_API.Controllers.WeatherForecastController.Get (Web_API)" in 40.6759ms
+2022-12-16 02:53:25.114 +05:30[INF] Executed endpoint '"Web_API.Controllers.WeatherForecastController.Get (Web_API)"'
+2022-12-16 02:53:25.116 +05:30[INF] "Request finished in 208.6227ms 200 application/json; charset=utf-8"
+2022-12-16 02:53:25.159 +05:30[INF] "Request starting HTTP/2.0 GET https://localhost:44323/favicon.ico  "
+2022-12-16 02:53:25.163 +05:30[INF] "Request finished in 3.9686ms 404 "
+2022-12-16 02:53:27.048 +05:30[INF] "Request starting HTTP/1.1 POST https://localhost:44323/api/User/UserTodoList/ application/json 22"
+2022-12-16 02:53:27.055 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.getwatingtodo (Web_API)"'
+2022-12-16 02:53:27.064 +05:30[INF] Route matched with "{action = \"getwatingtodo\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult getwatingtodo(Web_API.Models.EmpToDoList)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-16 02:53:32.010 +05:30[WRN] No type was specified for the decimal column '"Price"' on entity type '"TShirtName"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2022-12-16 02:53:32.039 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-16 02:53:32.569 +05:30[INF] Executed DbCommand ("48"ms) [Parameters=["@__UserID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [e].[ID], [e].[EMP_ID], [e].[END_DATE], [e].[NOTE], [e].[START_DATE], [e].[STATUS]\r\nFROM [EMP_TO_DO_LIST] AS [e]\r\nWHERE [e].[EMP_ID] = @__UserID_0"
+2022-12-16 02:53:32.759 +05:30[INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Web_API.Models.EmpToDoList, Web_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-12-16 02:53:32.762 +05:30[INF] Executed action "Web_API.Controllers.UserController.getwatingtodo (Web_API)" in 5698.454ms
+2022-12-16 02:53:32.762 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.getwatingtodo (Web_API)"'
+2022-12-16 02:53:32.765 +05:30[INF] "Request finished in 5717.5978ms 200 application/json; charset=utf-8"
+2022-12-16 02:54:23.952 +05:30[INF] Application Is Starting
+2022-12-16 02:54:24.862 +05:30[INF] User profile is available. Using '"C:\\Users\\Miyuranga\\AppData\\Local\\ASP.NET\\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-12-16 02:54:25.126 +05:30[INF] Application started. Press Ctrl+C to shut down.
+2022-12-16 02:54:25.126 +05:30[INF] Hosting environment: "Development"
+2022-12-16 02:54:25.126 +05:30[INF] Content root path: "F:\\HRMS_Project\\Web_API\\Web_API"
+2022-12-16 02:54:25.164 +05:30[INF] "Request starting HTTP/2.0 GET https://localhost:44323/weatherforecast  "
+2022-12-16 02:54:25.338 +05:30[INF] Executing endpoint '"Web_API.Controllers.WeatherForecastController.Get (Web_API)"'
+2022-12-16 02:54:25.361 +05:30[INF] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Web_API.WeatherForecast] Get()" on controller "Web_API.Controllers.WeatherForecastController" ("Web_API").
+2022-12-16 02:54:25.368 +05:30[INF] Executing ObjectResult, writing value of type '"Web_API.WeatherForecast[]"'.
+2022-12-16 02:54:25.398 +05:30[INF] Executed action "Web_API.Controllers.WeatherForecastController.Get (Web_API)" in 32.3247ms
+2022-12-16 02:54:25.400 +05:30[INF] Executed endpoint '"Web_API.Controllers.WeatherForecastController.Get (Web_API)"'
+2022-12-16 02:54:25.403 +05:30[INF] "Request finished in 241.3472ms 200 application/json; charset=utf-8"
+2022-12-16 02:54:25.477 +05:30[INF] "Request starting HTTP/2.0 GET https://localhost:44323/favicon.ico  "
+2022-12-16 02:54:25.487 +05:30[INF] "Request finished in 9.3693ms 404 "
+2022-12-16 02:54:25.747 +05:30[INF] "Request starting HTTP/1.1 POST https://localhost:44323/api/User/UserTodoList/ application/json 22"
+2022-12-16 02:54:25.754 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.getwatingtodo (Web_API)"'
+2022-12-16 02:54:25.762 +05:30[INF] Route matched with "{action = \"getwatingtodo\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult getwatingtodo(Web_API.Models.EmpToDoList)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-16 02:54:29.039 +05:30[WRN] No type was specified for the decimal column '"Price"' on entity type '"TShirtName"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2022-12-16 02:54:29.071 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-16 02:54:29.586 +05:30[INF] Executed DbCommand ("63"ms) [Parameters=["@__UserID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [e].[ID], [e].[EMP_ID], [e].[END_DATE], [e].[NOTE], [e].[START_DATE], [e].[STATUS]\r\nFROM [EMP_TO_DO_LIST] AS [e]\r\nWHERE [e].[EMP_ID] = @__UserID_0"
+2022-12-16 02:54:29.702 +05:30[INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Web_API.Models.EmpToDoList, Web_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-12-16 02:54:29.704 +05:30[INF] Executed action "Web_API.Controllers.UserController.getwatingtodo (Web_API)" in 3941.8424ms
+2022-12-16 02:54:29.704 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.getwatingtodo (Web_API)"'
+2022-12-16 02:54:29.707 +05:30[INF] "Request finished in 3960.3636ms 200 application/json; charset=utf-8"
+2022-12-16 02:54:43.860 +05:30[INF] Application Is Starting
+2022-12-16 02:54:45.664 +05:30[INF] User profile is available. Using '"C:\\Users\\Miyuranga\\AppData\\Local\\ASP.NET\\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-12-16 02:54:45.962 +05:30[INF] Application started. Press Ctrl+C to shut down.
+2022-12-16 02:54:45.962 +05:30[INF] Hosting environment: "Development"
+2022-12-16 02:54:45.962 +05:30[INF] Content root path: "F:\\HRMS_Project\\Web_API\\Web_API"
+2022-12-16 02:54:46.009 +05:30[INF] "Request starting HTTP/2.0 GET https://localhost:44323/weatherforecast  "
+2022-12-16 02:54:46.120 +05:30[INF] Executing endpoint '"Web_API.Controllers.WeatherForecastController.Get (Web_API)"'
+2022-12-16 02:54:46.140 +05:30[INF] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Web_API.WeatherForecast] Get()" on controller "Web_API.Controllers.WeatherForecastController" ("Web_API").
+2022-12-16 02:54:46.146 +05:30[INF] Executing ObjectResult, writing value of type '"Web_API.WeatherForecast[]"'.
+2022-12-16 02:54:46.175 +05:30[INF] Executed action "Web_API.Controllers.WeatherForecastController.Get (Web_API)" in 29.9132ms
+2022-12-16 02:54:46.176 +05:30[INF] Executed endpoint '"Web_API.Controllers.WeatherForecastController.Get (Web_API)"'
+2022-12-16 02:54:46.180 +05:30[INF] "Request finished in 173.0048ms 200 application/json; charset=utf-8"
+2022-12-16 02:54:46.944 +05:30[INF] "Request starting HTTP/2.0 GET https://localhost:44323/favicon.ico  "
+2022-12-16 02:54:46.959 +05:30[INF] "Request finished in 16.4985ms 404 "
+2022-12-16 02:54:49.854 +05:30[INF] "Request starting HTTP/1.1 POST https://localhost:44323/api/User/UserTodoList/ application/json 25"
+2022-12-16 02:54:49.860 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.getwatingtodo (Web_API)"'
+2022-12-16 02:54:49.881 +05:30[INF] Route matched with "{action = \"getwatingtodo\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult getwatingtodo(Web_API.Models.EmpToDoList)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-16 02:55:14.859 +05:30[WRN] No type was specified for the decimal column '"Price"' on entity type '"TShirtName"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2022-12-16 02:55:14.891 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-16 02:55:15.453 +05:30[INF] Executed DbCommand ("65"ms) [Parameters=["@__UserID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [e].[ID], [e].[EMP_ID], [e].[END_DATE], [e].[NOTE], [e].[START_DATE], [e].[STATUS]\r\nFROM [EMP_TO_DO_LIST] AS [e]\r\nWHERE [e].[EMP_ID] = @__UserID_0"
+2022-12-16 02:55:15.589 +05:30[INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Web_API.Models.EmpToDoList, Web_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-12-16 02:55:15.592 +05:30[INF] Executed action "Web_API.Controllers.UserController.getwatingtodo (Web_API)" in 25710.7246ms
+2022-12-16 02:55:15.592 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.getwatingtodo (Web_API)"'
+2022-12-16 02:55:15.595 +05:30[INF] "Request finished in 25741.737ms 200 application/json; charset=utf-8"
+2022-12-16 02:55:24.463 +05:30[INF] "Request starting HTTP/1.1 POST https://localhost:44323/api/User/UserTodoList/ application/json 22"
+2022-12-16 02:55:24.466 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.getwatingtodo (Web_API)"'
+2022-12-16 02:55:24.467 +05:30[INF] Route matched with "{action = \"getwatingtodo\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult getwatingtodo(Web_API.Models.EmpToDoList)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-16 02:55:26.605 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-16 02:55:26.612 +05:30[INF] Executed DbCommand ("2"ms) [Parameters=["@__UserID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [e].[ID], [e].[EMP_ID], [e].[END_DATE], [e].[NOTE], [e].[START_DATE], [e].[STATUS]\r\nFROM [EMP_TO_DO_LIST] AS [e]\r\nWHERE [e].[EMP_ID] = @__UserID_0"
+2022-12-16 02:55:26.613 +05:30[INF] Executing ObjectResult, writing value of type '"System.String"'.
+2022-12-16 02:55:26.615 +05:30[INF] Executed action "Web_API.Controllers.UserController.getwatingtodo (Web_API)" in 2147.8576ms
+2022-12-16 02:55:26.615 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.getwatingtodo (Web_API)"'
+2022-12-16 02:55:26.617 +05:30[INF] "Request finished in 2154.011ms 200 text/plain; charset=utf-8"
+2022-12-16 02:56:30.674 +05:30[INF] Application Is Starting
+2022-12-16 02:56:31.536 +05:30[INF] User profile is available. Using '"C:\\Users\\Miyuranga\\AppData\\Local\\ASP.NET\\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-12-16 02:56:31.832 +05:30[INF] Application started. Press Ctrl+C to shut down.
+2022-12-16 02:56:31.832 +05:30[INF] Hosting environment: "Development"
+2022-12-16 02:56:31.832 +05:30[INF] Content root path: "F:\\HRMS_Project\\Web_API\\Web_API"
+2022-12-16 02:56:31.878 +05:30[INF] "Request starting HTTP/2.0 GET https://localhost:44323/weatherforecast  "
+2022-12-16 02:56:31.989 +05:30[INF] Executing endpoint '"Web_API.Controllers.WeatherForecastController.Get (Web_API)"'
+2022-12-16 02:56:32.010 +05:30[INF] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Web_API.WeatherForecast] Get()" on controller "Web_API.Controllers.WeatherForecastController" ("Web_API").
+2022-12-16 02:56:32.018 +05:30[INF] Executing ObjectResult, writing value of type '"Web_API.WeatherForecast[]"'.
+2022-12-16 02:56:32.049 +05:30[INF] Executed action "Web_API.Controllers.WeatherForecastController.Get (Web_API)" in 35.0239ms
+2022-12-16 02:56:32.050 +05:30[INF] Executed endpoint '"Web_API.Controllers.WeatherForecastController.Get (Web_API)"'
+2022-12-16 02:56:32.052 +05:30[INF] "Request finished in 177.0131ms 200 application/json; charset=utf-8"
+2022-12-16 02:56:32.109 +05:30[INF] "Request starting HTTP/2.0 GET https://localhost:44323/favicon.ico  "
+2022-12-16 02:56:32.119 +05:30[INF] "Request finished in 10.059ms 404 "
+2022-12-16 02:56:32.736 +05:30[INF] "Request starting HTTP/1.1 POST https://localhost:44323/api/User/UserTodoList/ application/json 22"
+2022-12-16 02:56:32.739 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.getwatingtodo (Web_API)"'
+2022-12-16 02:56:32.748 +05:30[INF] Route matched with "{action = \"getwatingtodo\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult getwatingtodo(Web_API.Models.EmpToDoList)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-16 02:56:33.402 +05:30[WRN] No type was specified for the decimal column '"Price"' on entity type '"TShirtName"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2022-12-16 02:56:33.435 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-16 02:56:33.940 +05:30[INF] Executed DbCommand ("55"ms) [Parameters=["@__UserID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [p].[ID], [p].[BRANCH_ID], [p].[CREAT_DATE], [p].[CREAT_EMP_ID], [p].[EMP_ID], [p].[LAST_L_DATE_TIME], [p].[LOCK1], [p].[LOCK2], [p].[LOG_IN_OUT], [p].[PASS], [p].[Path], [p].[USER_NAME]\r\nFROM [PASS] AS [p]\r\nWHERE [p].[EMP_ID] = @__UserID_0"
+2022-12-16 02:56:34.057 +05:30[INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Web_API.Models.EmpToDoList, Web_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-12-16 02:56:34.058 +05:30[INF] Executed action "Web_API.Controllers.UserController.getwatingtodo (Web_API)" in 1310.7175ms
+2022-12-16 02:56:34.059 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.getwatingtodo (Web_API)"'
+2022-12-16 02:56:34.062 +05:30[INF] "Request finished in 1326.1978ms 200 application/json; charset=utf-8"
+2022-12-16 02:56:35.703 +05:30[INF] "Request starting HTTP/1.1 POST https://localhost:44323/api/User/UserTodoList/ application/json 22"
+2022-12-16 02:56:35.706 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.getwatingtodo (Web_API)"'
+2022-12-16 02:56:35.707 +05:30[INF] Route matched with "{action = \"getwatingtodo\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult getwatingtodo(Web_API.Models.EmpToDoList)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-16 02:56:35.715 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-16 02:56:35.722 +05:30[INF] Executed DbCommand ("2"ms) [Parameters=["@__UserID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [p].[ID], [p].[BRANCH_ID], [p].[CREAT_DATE], [p].[CREAT_EMP_ID], [p].[EMP_ID], [p].[LAST_L_DATE_TIME], [p].[LOCK1], [p].[LOCK2], [p].[LOG_IN_OUT], [p].[PASS], [p].[Path], [p].[USER_NAME]\r\nFROM [PASS] AS [p]\r\nWHERE [p].[EMP_ID] = @__UserID_0"
+2022-12-16 02:56:35.725 +05:30[INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Web_API.Models.EmpToDoList, Web_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-12-16 02:56:35.726 +05:30[INF] Executed action "Web_API.Controllers.UserController.getwatingtodo (Web_API)" in 18.6813ms
+2022-12-16 02:56:35.726 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.getwatingtodo (Web_API)"'
+2022-12-16 02:56:35.726 +05:30[INF] "Request finished in 23.3559ms 200 application/json; charset=utf-8"
+2022-12-16 02:56:36.734 +05:30[INF] "Request starting HTTP/1.1 POST https://localhost:44323/api/User/UserTodoList/ application/json 22"
+2022-12-16 02:56:36.735 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.getwatingtodo (Web_API)"'
+2022-12-16 02:56:36.735 +05:30[INF] Route matched with "{action = \"getwatingtodo\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult getwatingtodo(Web_API.Models.EmpToDoList)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-16 02:56:36.739 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-16 02:56:36.742 +05:30[INF] Executed DbCommand ("0"ms) [Parameters=["@__UserID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [p].[ID], [p].[BRANCH_ID], [p].[CREAT_DATE], [p].[CREAT_EMP_ID], [p].[EMP_ID], [p].[LAST_L_DATE_TIME], [p].[LOCK1], [p].[LOCK2], [p].[LOG_IN_OUT], [p].[PASS], [p].[Path], [p].[USER_NAME]\r\nFROM [PASS] AS [p]\r\nWHERE [p].[EMP_ID] = @__UserID_0"
+2022-12-16 02:56:36.744 +05:30[INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Web_API.Models.EmpToDoList, Web_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-12-16 02:56:36.745 +05:30[INF] Executed action "Web_API.Controllers.UserController.getwatingtodo (Web_API)" in 9.1413ms
+2022-12-16 02:56:36.745 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.getwatingtodo (Web_API)"'
+2022-12-16 02:56:36.745 +05:30[INF] "Request finished in 11.4559ms 200 application/json; charset=utf-8"
+2022-12-16 02:56:37.488 +05:30[INF] "Request starting HTTP/1.1 POST https://localhost:44323/api/User/UserTodoList/ application/json 22"
+2022-12-16 02:56:37.489 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.getwatingtodo (Web_API)"'
+2022-12-16 02:56:37.489 +05:30[INF] Route matched with "{action = \"getwatingtodo\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult getwatingtodo(Web_API.Models.EmpToDoList)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-16 02:56:37.491 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-16 02:56:37.493 +05:30[INF] Executed DbCommand ("0"ms) [Parameters=["@__UserID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [p].[ID], [p].[BRANCH_ID], [p].[CREAT_DATE], [p].[CREAT_EMP_ID], [p].[EMP_ID], [p].[LAST_L_DATE_TIME], [p].[LOCK1], [p].[LOCK2], [p].[LOG_IN_OUT], [p].[PASS], [p].[Path], [p].[USER_NAME]\r\nFROM [PASS] AS [p]\r\nWHERE [p].[EMP_ID] = @__UserID_0"
+2022-12-16 02:56:37.494 +05:30[INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Web_API.Models.EmpToDoList, Web_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-12-16 02:56:37.495 +05:30[INF] Executed action "Web_API.Controllers.UserController.getwatingtodo (Web_API)" in 5.2828ms
+2022-12-16 02:56:37.495 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.getwatingtodo (Web_API)"'
+2022-12-16 02:56:37.495 +05:30[INF] "Request finished in 7.1756ms 200 application/json; charset=utf-8"
+2022-12-16 02:56:37.823 +05:30[INF] "Request starting HTTP/1.1 POST https://localhost:44323/api/User/UserTodoList/ application/json 22"
+2022-12-16 02:56:37.825 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.getwatingtodo (Web_API)"'
+2022-12-16 02:56:37.827 +05:30[INF] Route matched with "{action = \"getwatingtodo\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult getwatingtodo(Web_API.Models.EmpToDoList)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-16 02:56:37.836 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-16 02:56:37.839 +05:30[INF] Executed DbCommand ("1"ms) [Parameters=["@__UserID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [p].[ID], [p].[BRANCH_ID], [p].[CREAT_DATE], [p].[CREAT_EMP_ID], [p].[EMP_ID], [p].[LAST_L_DATE_TIME], [p].[LOCK1], [p].[LOCK2], [p].[LOG_IN_OUT], [p].[PASS], [p].[Path], [p].[USER_NAME]\r\nFROM [PASS] AS [p]\r\nWHERE [p].[EMP_ID] = @__UserID_0"
+2022-12-16 02:56:37.844 +05:30[INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Web_API.Models.EmpToDoList, Web_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-12-16 02:56:37.846 +05:30[INF] Executed action "Web_API.Controllers.UserController.getwatingtodo (Web_API)" in 18.6666ms
+2022-12-16 02:56:37.846 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.getwatingtodo (Web_API)"'
+2022-12-16 02:56:37.846 +05:30[INF] "Request finished in 23.2343ms 200 application/json; charset=utf-8"
+2022-12-16 02:56:44.559 +05:30[INF] "Request starting HTTP/1.1 POST https://localhost:44323/api/User/UserTodoList/ application/json 25"
+2022-12-16 02:56:44.560 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.getwatingtodo (Web_API)"'
+2022-12-16 02:56:44.560 +05:30[INF] Route matched with "{action = \"getwatingtodo\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult getwatingtodo(Web_API.Models.EmpToDoList)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-16 02:56:44.562 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-16 02:56:44.563 +05:30[INF] Executed DbCommand ("0"ms) [Parameters=["@__UserID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [p].[ID], [p].[BRANCH_ID], [p].[CREAT_DATE], [p].[CREAT_EMP_ID], [p].[EMP_ID], [p].[LAST_L_DATE_TIME], [p].[LOCK1], [p].[LOCK2], [p].[LOG_IN_OUT], [p].[PASS], [p].[Path], [p].[USER_NAME]\r\nFROM [PASS] AS [p]\r\nWHERE [p].[EMP_ID] = @__UserID_0"
+2022-12-16 02:56:44.566 +05:30[INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Web_API.Models.EmpToDoList, Web_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-12-16 02:56:44.568 +05:30[INF] Executed action "Web_API.Controllers.UserController.getwatingtodo (Web_API)" in 8.3154ms
+2022-12-16 02:56:44.569 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.getwatingtodo (Web_API)"'
+2022-12-16 02:56:44.569 +05:30[INF] "Request finished in 9.7809ms 200 application/json; charset=utf-8"
+2022-12-16 02:56:48.714 +05:30[INF] "Request starting HTTP/1.1 POST https://localhost:44323/api/User/UserTodoList/ application/json 26"
+2022-12-16 02:56:48.715 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.getwatingtodo (Web_API)"'
+2022-12-16 02:56:48.715 +05:30[INF] Route matched with "{action = \"getwatingtodo\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult getwatingtodo(Web_API.Models.EmpToDoList)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-16 02:56:48.718 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-16 02:56:48.721 +05:30[INF] Executed DbCommand ("1"ms) [Parameters=["@__UserID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [p].[ID], [p].[BRANCH_ID], [p].[CREAT_DATE], [p].[CREAT_EMP_ID], [p].[EMP_ID], [p].[LAST_L_DATE_TIME], [p].[LOCK1], [p].[LOCK2], [p].[LOG_IN_OUT], [p].[PASS], [p].[Path], [p].[USER_NAME]\r\nFROM [PASS] AS [p]\r\nWHERE [p].[EMP_ID] = @__UserID_0"
+2022-12-16 02:56:48.722 +05:30[INF] Executing ObjectResult, writing value of type '"System.String"'.
+2022-12-16 02:56:48.724 +05:30[INF] Executed action "Web_API.Controllers.UserController.getwatingtodo (Web_API)" in 9.2287ms
+2022-12-16 02:56:48.725 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.getwatingtodo (Web_API)"'
+2022-12-16 02:56:48.726 +05:30[INF] "Request finished in 11.8915ms 200 text/plain; charset=utf-8"
+2022-12-16 02:56:49.985 +05:30[INF] "Request starting HTTP/1.1 POST https://localhost:44323/api/User/UserTodoList/ application/json 26"
+2022-12-16 02:56:49.985 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.getwatingtodo (Web_API)"'
+2022-12-16 02:56:49.986 +05:30[INF] Route matched with "{action = \"getwatingtodo\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult getwatingtodo(Web_API.Models.EmpToDoList)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-16 02:56:49.988 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-16 02:56:49.990 +05:30[INF] Executed DbCommand ("0"ms) [Parameters=["@__UserID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [p].[ID], [p].[BRANCH_ID], [p].[CREAT_DATE], [p].[CREAT_EMP_ID], [p].[EMP_ID], [p].[LAST_L_DATE_TIME], [p].[LOCK1], [p].[LOCK2], [p].[LOG_IN_OUT], [p].[PASS], [p].[Path], [p].[USER_NAME]\r\nFROM [PASS] AS [p]\r\nWHERE [p].[EMP_ID] = @__UserID_0"
+2022-12-16 02:56:49.990 +05:30[INF] Executing ObjectResult, writing value of type '"System.String"'.
+2022-12-16 02:56:49.991 +05:30[INF] Executed action "Web_API.Controllers.UserController.getwatingtodo (Web_API)" in 4.9518ms
+2022-12-16 02:56:49.991 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.getwatingtodo (Web_API)"'
+2022-12-16 02:56:49.991 +05:30[INF] "Request finished in 6.8317ms 200 text/plain; charset=utf-8"

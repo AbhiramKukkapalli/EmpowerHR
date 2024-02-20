@@ -1,0 +1,661 @@
+2022-12-10 02:23:21.040 +05:30[INF] Application Is Starting
+2022-12-10 02:23:24.572 +05:30[INF] User profile is available. Using '"C:\\Users\\Miyuranga\\AppData\\Local\\ASP.NET\\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-12-10 02:23:25.255 +05:30[INF] Application started. Press Ctrl+C to shut down.
+2022-12-10 02:23:25.255 +05:30[INF] Hosting environment: "Development"
+2022-12-10 02:23:25.255 +05:30[INF] Content root path: "F:\\HRMS_Project\\Web_API\\Web_API"
+2022-12-10 02:23:25.354 +05:30[INF] "Request starting HTTP/1.1 HEAD https://localhost:44323/  "
+2022-12-10 02:23:25.354 +05:30[INF] "Request starting HTTP/2.0 GET https://localhost:44323/weatherforecast  "
+2022-12-10 02:23:26.245 +05:30[INF] Executing endpoint '"Web_API.Controllers.WeatherForecastController.Get (Web_API)"'
+2022-12-10 02:23:26.282 +05:30[INF] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Web_API.WeatherForecast] Get()" on controller "Web_API.Controllers.WeatherForecastController" ("Web_API").
+2022-12-10 02:23:26.284 +05:30[INF] "Request finished in 931.9363ms 404 "
+2022-12-10 02:23:26.291 +05:30[INF] Executing ObjectResult, writing value of type '"Web_API.WeatherForecast[]"'.
+2022-12-10 02:23:26.331 +05:30[INF] Executed action "Web_API.Controllers.WeatherForecastController.Get (Web_API)" in 44.6045ms
+2022-12-10 02:23:26.331 +05:30[INF] Executed endpoint '"Web_API.Controllers.WeatherForecastController.Get (Web_API)"'
+2022-12-10 02:23:26.333 +05:30[INF] "Request finished in 981.9666ms 200 application/json; charset=utf-8"
+2022-12-10 02:23:26.375 +05:30[INF] "Request starting HTTP/2.0 GET https://localhost:44323/favicon.ico  "
+2022-12-10 02:23:26.380 +05:30[INF] "Request finished in 4.6599ms 404 "
+2022-12-10 02:23:33.672 +05:30[INF] "Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/User/LoginUser  "
+2022-12-10 02:23:33.677 +05:30[INF] CORS policy execution successful.
+2022-12-10 02:23:33.680 +05:30[INF] "Request finished in 8.6727ms 204 "
+2022-12-10 02:23:33.685 +05:30[INF] "Request starting HTTP/2.0 POST https://localhost:44323/api/User/LoginUser application/json 32"
+2022-12-10 02:23:33.687 +05:30[INF] CORS policy execution successful.
+2022-12-10 02:23:33.688 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.Login (Web_API)"'
+2022-12-10 02:23:33.699 +05:30[INF] Route matched with "{action = \"Login\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Login(Web_API.Models.Pass)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-10 02:23:34.249 +05:30[INF] Login_By  1
+2022-12-10 02:23:34.778 +05:30[WRN] No type was specified for the decimal column '"Price"' on entity type '"TShirtName"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2022-12-10 02:23:34.835 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-10 02:23:35.747 +05:30[INF] Executed DbCommand ("46"ms) [Parameters=["@__8__locals1_User_ID_0='?' (DbType = Int32), @__Get_Sha_Data_1='?' (Size = 150)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [p].[ID], [p].[BRANCH_ID], [p].[CREAT_DATE], [p].[CREAT_EMP_ID], [p].[EMP_ID], [p].[LAST_L_DATE_TIME], [p].[LOCK1], [p].[LOCK2], [p].[LOG_IN_OUT], [p].[PASS], [p].[Path], [p].[USER_NAME]\r\nFROM [PASS] AS [p]\r\nWHERE ([p].[EMP_ID] = @__8__locals1_User_ID_0) AND ([p].[PASS] = @__Get_Sha_Data_1)"
+2022-12-10 02:23:35.814 +05:30[INF] Executed DbCommand ("4"ms) [Parameters=["@__8__locals1_User_ID_0='?' (DbType = Int32), @__userIn_1='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [p].[ID], [p].[BRANCH_ID], [p].[CREAT_DATE], [p].[CREAT_EMP_ID], [p].[EMP_ID], [p].[LAST_L_DATE_TIME], [p].[LOCK1], [p].[LOCK2], [p].[LOG_IN_OUT], [p].[PASS], [p].[Path], [p].[USER_NAME]\r\nFROM [PASS] AS [p]\r\nWHERE ([p].[EMP_ID] = @__8__locals1_User_ID_0) AND ([p].[LOG_IN_OUT] = @__userIn_1)"
+2022-12-10 02:23:35.815 +05:30[INF] Executing ObjectResult, writing value of type '"System.String"'.
+2022-12-10 02:23:35.817 +05:30[INF] Executed action "Web_API.Controllers.UserController.Login (Web_API)" in 2118.1801ms
+2022-12-10 02:23:35.817 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.Login (Web_API)"'
+2022-12-10 02:23:35.829 +05:30[INF] "Request finished in 2144.2618ms 200 text/plain; charset=utf-8"
+2022-12-10 02:23:48.165 +05:30[INF] "Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/User/LoginUser  "
+2022-12-10 02:23:48.165 +05:30[INF] CORS policy execution successful.
+2022-12-10 02:23:48.166 +05:30[INF] "Request finished in 1.6186ms 204 "
+2022-12-10 02:23:48.168 +05:30[INF] "Request starting HTTP/2.0 POST https://localhost:44323/api/User/LoginUser application/json 32"
+2022-12-10 02:23:48.168 +05:30[INF] CORS policy execution successful.
+2022-12-10 02:23:48.169 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.Login (Web_API)"'
+2022-12-10 02:23:48.170 +05:30[INF] Route matched with "{action = \"Login\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Login(Web_API.Models.Pass)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-10 02:23:48.171 +05:30[INF] Login_By  1
+2022-12-10 02:23:48.198 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-10 02:23:48.203 +05:30[INF] Executed DbCommand ("1"ms) [Parameters=["@__8__locals1_User_ID_0='?' (DbType = Int32), @__Get_Sha_Data_1='?' (Size = 150)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [p].[ID], [p].[BRANCH_ID], [p].[CREAT_DATE], [p].[CREAT_EMP_ID], [p].[EMP_ID], [p].[LAST_L_DATE_TIME], [p].[LOCK1], [p].[LOCK2], [p].[LOG_IN_OUT], [p].[PASS], [p].[Path], [p].[USER_NAME]\r\nFROM [PASS] AS [p]\r\nWHERE ([p].[EMP_ID] = @__8__locals1_User_ID_0) AND ([p].[PASS] = @__Get_Sha_Data_1)"
+2022-12-10 02:23:48.204 +05:30[INF] Executed DbCommand ("0"ms) [Parameters=["@__8__locals1_User_ID_0='?' (DbType = Int32), @__userIn_1='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [p].[ID], [p].[BRANCH_ID], [p].[CREAT_DATE], [p].[CREAT_EMP_ID], [p].[EMP_ID], [p].[LAST_L_DATE_TIME], [p].[LOCK1], [p].[LOCK2], [p].[LOG_IN_OUT], [p].[PASS], [p].[Path], [p].[USER_NAME]\r\nFROM [PASS] AS [p]\r\nWHERE ([p].[EMP_ID] = @__8__locals1_User_ID_0) AND ([p].[LOG_IN_OUT] = @__userIn_1)"
+2022-12-10 02:23:48.215 +05:30[INF] Executed DbCommand ("4"ms) [Parameters=["@__8__locals1_User_ID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [e].[ID], [e].[B_ID], [e].[D_ID], [e].[D/OF_A], [e].[D/OF_C], [e].[D/OF_JOIN], [e].[DESCRIPTION], [e].[EMP_ID], [e].[NFC_NUMBER], [e].[P_ID], [e].[RE_EMP_ID], [e].[W_T_ID]\r\nFROM [EMP_WORK_INFO] AS [e]\r\nWHERE [e].[EMP_ID] = @__8__locals1_User_ID_0"
+2022-12-10 02:23:48.254 +05:30[INF] Executed DbCommand ("4"ms) [Parameters=["@__8__locals1_User_ID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT [p].[POSITION_NAME] AS [PositionName]\r\nFROM [EMP_WORK_INFO] AS [e]\r\nINNER JOIN [POSITION] AS [p] ON [e].[P_ID] = [p].[P_ID]\r\nWHERE [e].[EMP_ID] = @__8__locals1_User_ID_0"
+2022-12-10 02:23:48.265 +05:30[INF] Executed DbCommand ("5"ms) [Parameters=["@__8__locals1_User_ID_0='?' (DbType = Int32), @__position_ID_1='?' (DbType = Int32), @__Department_ID_2='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT [n].[N_TITEL] AS [Notice_Titel], [n].[N_BODY] AS [Notice_body]\r\nFROM [NOTICE_VIEW] AS [n]\r\nWHERE (([n].[EMP_ID] = @__8__locals1_User_ID_0) OR ([n].[P_ID] = @__position_ID_1)) OR ([n].[D_ID] = @__Department_ID_2)"
+2022-12-10 02:23:48.722 +05:30[INF] Executing ObjectResult, writing value of type '"System.String"'.
+2022-12-10 02:23:48.723 +05:30[INF] Executed action "Web_API.Controllers.UserController.Login (Web_API)" in 553.4002ms
+2022-12-10 02:23:48.723 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.Login (Web_API)"'
+2022-12-10 02:23:48.724 +05:30[INF] "Request finished in 555.8986ms 200 text/plain; charset=utf-8"
+2022-12-10 02:23:48.772 +05:30[INF] "Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/User/UserLogout  "
+2022-12-10 02:23:48.772 +05:30[INF] CORS policy execution successful.
+2022-12-10 02:23:48.772 +05:30[INF] "Request finished in 0.5573ms 204 "
+2022-12-10 02:23:48.776 +05:30[INF] "Request starting HTTP/2.0 POST https://localhost:44323/api/User/UserLogout application/json 24"
+2022-12-10 02:23:48.776 +05:30[INF] CORS policy execution successful.
+2022-12-10 02:23:48.776 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.LogOut_User (Web_API)"'
+2022-12-10 02:23:48.784 +05:30[INF] Route matched with "{action = \"LogOut_User\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult LogOut_User(Web_API.Models.Pass)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-10 02:23:48.799 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-10 02:23:48.807 +05:30[INF] Executed DbCommand ("1"ms) [Parameters=["@__userID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [p].[ID], [p].[BRANCH_ID], [p].[CREAT_DATE], [p].[CREAT_EMP_ID], [p].[EMP_ID], [p].[LAST_L_DATE_TIME], [p].[LOCK1], [p].[LOCK2], [p].[LOG_IN_OUT], [p].[PASS], [p].[Path], [p].[USER_NAME]\r\nFROM [PASS] AS [p]\r\nWHERE [p].[EMP_ID] = @__userID_0"
+2022-12-10 02:23:48.929 +05:30[INF] Executing ObjectResult, writing value of type '"System.String"'.
+2022-12-10 02:23:48.929 +05:30[INF] Executed action "Web_API.Controllers.UserController.LogOut_User (Web_API)" in 144.8077ms
+2022-12-10 02:23:48.929 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.LogOut_User (Web_API)"'
+2022-12-10 02:23:48.930 +05:30[INF] "Request finished in 154.2083ms 200 text/plain; charset=utf-8"
+2022-12-10 02:24:19.288 +05:30[INF] "Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/User/UserLogout  "
+2022-12-10 02:24:19.291 +05:30[INF] CORS policy execution successful.
+2022-12-10 02:24:19.294 +05:30[INF] "Request finished in 5.9569ms 204 "
+2022-12-10 02:24:19.302 +05:30[INF] "Request starting HTTP/2.0 POST https://localhost:44323/api/User/UserLogout application/json 24"
+2022-12-10 02:24:19.303 +05:30[INF] CORS policy execution successful.
+2022-12-10 02:24:19.303 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.LogOut_User (Web_API)"'
+2022-12-10 02:24:19.303 +05:30[INF] Route matched with "{action = \"LogOut_User\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult LogOut_User(Web_API.Models.Pass)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-10 02:24:19.306 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-10 02:24:19.308 +05:30[INF] Executed DbCommand ("2"ms) [Parameters=["@__userID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [p].[ID], [p].[BRANCH_ID], [p].[CREAT_DATE], [p].[CREAT_EMP_ID], [p].[EMP_ID], [p].[LAST_L_DATE_TIME], [p].[LOCK1], [p].[LOCK2], [p].[LOG_IN_OUT], [p].[PASS], [p].[Path], [p].[USER_NAME]\r\nFROM [PASS] AS [p]\r\nWHERE [p].[EMP_ID] = @__userID_0"
+2022-12-10 02:24:19.314 +05:30[INF] Executing ObjectResult, writing value of type '"System.String"'.
+2022-12-10 02:24:19.315 +05:30[INF] Executed action "Web_API.Controllers.UserController.LogOut_User (Web_API)" in 11.5884ms
+2022-12-10 02:24:19.315 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.LogOut_User (Web_API)"'
+2022-12-10 02:24:19.315 +05:30[INF] "Request finished in 12.6691ms 200 text/plain; charset=utf-8"
+2022-12-10 02:25:22.238 +05:30[INF] Application Is Starting
+2022-12-10 02:25:22.937 +05:30[INF] User profile is available. Using '"C:\\Users\\Miyuranga\\AppData\\Local\\ASP.NET\\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-12-10 02:25:23.155 +05:30[INF] Application started. Press Ctrl+C to shut down.
+2022-12-10 02:25:23.155 +05:30[INF] Hosting environment: "Development"
+2022-12-10 02:25:23.155 +05:30[INF] Content root path: "F:\\HRMS_Project\\Web_API\\Web_API"
+2022-12-10 02:25:23.187 +05:30[INF] "Request starting HTTP/1.1 HEAD https://localhost:44323/  "
+2022-12-10 02:25:23.289 +05:30[INF] "Request finished in 103.7922ms 404 "
+2022-12-10 02:25:24.400 +05:30[INF] "Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/User/LoginUser  "
+2022-12-10 02:25:24.412 +05:30[INF] CORS policy execution successful.
+2022-12-10 02:25:24.414 +05:30[INF] "Request finished in 14.1347ms 204 "
+2022-12-10 02:25:24.416 +05:30[INF] "Request starting HTTP/2.0 POST https://localhost:44323/api/User/LoginUser application/json 32"
+2022-12-10 02:25:24.417 +05:30[INF] CORS policy execution successful.
+2022-12-10 02:25:24.418 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.Login (Web_API)"'
+2022-12-10 02:25:24.446 +05:30[INF] Route matched with "{action = \"Login\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Login(Web_API.Models.Pass)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-10 02:25:24.608 +05:30[INF] Login_By  1
+2022-12-10 02:25:25.057 +05:30[WRN] No type was specified for the decimal column '"Price"' on entity type '"TShirtName"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2022-12-10 02:25:25.082 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-10 02:25:25.923 +05:30[INF] Executed DbCommand ("44"ms) [Parameters=["@__8__locals1_User_ID_0='?' (DbType = Int32), @__Get_Sha_Data_1='?' (Size = 150)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [p].[ID], [p].[BRANCH_ID], [p].[CREAT_DATE], [p].[CREAT_EMP_ID], [p].[EMP_ID], [p].[LAST_L_DATE_TIME], [p].[LOCK1], [p].[LOCK2], [p].[LOG_IN_OUT], [p].[PASS], [p].[Path], [p].[USER_NAME]\r\nFROM [PASS] AS [p]\r\nWHERE ([p].[EMP_ID] = @__8__locals1_User_ID_0) AND ([p].[PASS] = @__Get_Sha_Data_1)"
+2022-12-10 02:25:25.993 +05:30[INF] Executed DbCommand ("3"ms) [Parameters=["@__8__locals1_User_ID_0='?' (DbType = Int32), @__userIn_1='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [p].[ID], [p].[BRANCH_ID], [p].[CREAT_DATE], [p].[CREAT_EMP_ID], [p].[EMP_ID], [p].[LAST_L_DATE_TIME], [p].[LOCK1], [p].[LOCK2], [p].[LOG_IN_OUT], [p].[PASS], [p].[Path], [p].[USER_NAME]\r\nFROM [PASS] AS [p]\r\nWHERE ([p].[EMP_ID] = @__8__locals1_User_ID_0) AND ([p].[LOG_IN_OUT] = @__userIn_1)"
+2022-12-10 02:25:25.999 +05:30[INF] Executed DbCommand ("1"ms) [Parameters=["@__8__locals1_User_ID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [e].[ID], [e].[B_ID], [e].[D_ID], [e].[D/OF_A], [e].[D/OF_C], [e].[D/OF_JOIN], [e].[DESCRIPTION], [e].[EMP_ID], [e].[NFC_NUMBER], [e].[P_ID], [e].[RE_EMP_ID], [e].[W_T_ID]\r\nFROM [EMP_WORK_INFO] AS [e]\r\nWHERE [e].[EMP_ID] = @__8__locals1_User_ID_0"
+2022-12-10 02:25:26.028 +05:30[INF] Executed DbCommand ("2"ms) [Parameters=["@__8__locals1_User_ID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT [p].[POSITION_NAME] AS [PositionName]\r\nFROM [EMP_WORK_INFO] AS [e]\r\nINNER JOIN [POSITION] AS [p] ON [e].[P_ID] = [p].[P_ID]\r\nWHERE [e].[EMP_ID] = @__8__locals1_User_ID_0"
+2022-12-10 02:25:26.035 +05:30[INF] Executed DbCommand ("3"ms) [Parameters=["@__8__locals1_User_ID_0='?' (DbType = Int32), @__position_ID_1='?' (DbType = Int32), @__Department_ID_2='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT [n].[N_TITEL] AS [Notice_Titel], [n].[N_BODY] AS [Notice_body]\r\nFROM [NOTICE_VIEW] AS [n]\r\nWHERE (([n].[EMP_ID] = @__8__locals1_User_ID_0) OR ([n].[P_ID] = @__position_ID_1)) OR ([n].[D_ID] = @__Department_ID_2)"
+2022-12-10 02:25:26.157 +05:30[INF] Executing ObjectResult, writing value of type '"System.String"'.
+2022-12-10 02:25:26.166 +05:30[INF] Executed action "Web_API.Controllers.UserController.Login (Web_API)" in 1715.3628ms
+2022-12-10 02:25:26.166 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.Login (Web_API)"'
+2022-12-10 02:25:26.169 +05:30[INF] "Request finished in 1753.3227ms 200 text/plain; charset=utf-8"
+2022-12-10 02:25:26.209 +05:30[INF] "Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/User/UserLogout  "
+2022-12-10 02:25:26.212 +05:30[INF] CORS policy execution successful.
+2022-12-10 02:25:26.213 +05:30[INF] "Request finished in 3.318ms 204 "
+2022-12-10 02:25:26.214 +05:30[INF] "Request starting HTTP/2.0 POST https://localhost:44323/api/User/UserLogout application/json 24"
+2022-12-10 02:25:26.214 +05:30[INF] CORS policy execution successful.
+2022-12-10 02:25:26.216 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.LogOut_User (Web_API)"'
+2022-12-10 02:25:26.218 +05:30[INF] Route matched with "{action = \"LogOut_User\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult LogOut_User(Web_API.Models.Pass)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-10 02:25:32.509 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-10 02:25:32.514 +05:30[INF] Executed DbCommand ("1"ms) [Parameters=["@__userID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [p].[ID], [p].[BRANCH_ID], [p].[CREAT_DATE], [p].[CREAT_EMP_ID], [p].[EMP_ID], [p].[LAST_L_DATE_TIME], [p].[LOCK1], [p].[LOCK2], [p].[LOG_IN_OUT], [p].[PASS], [p].[Path], [p].[USER_NAME]\r\nFROM [PASS] AS [p]\r\nWHERE [p].[EMP_ID] = @__userID_0"
+2022-12-10 02:25:32.626 +05:30[INF] Executing ObjectResult, writing value of type '"System.String"'.
+2022-12-10 02:25:32.627 +05:30[INF] Executed action "Web_API.Controllers.UserController.LogOut_User (Web_API)" in 6409.2028ms
+2022-12-10 02:25:32.627 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.LogOut_User (Web_API)"'
+2022-12-10 02:25:32.627 +05:30[INF] "Request finished in 6412.9795ms 200 text/plain; charset=utf-8"
+2022-12-10 02:26:26.261 +05:30[INF] Application Is Starting
+2022-12-10 02:26:27.397 +05:30[INF] User profile is available. Using '"C:\\Users\\Miyuranga\\AppData\\Local\\ASP.NET\\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-12-10 02:26:27.667 +05:30[INF] Application started. Press Ctrl+C to shut down.
+2022-12-10 02:26:27.667 +05:30[INF] Hosting environment: "Development"
+2022-12-10 02:26:27.667 +05:30[INF] Content root path: "F:\\HRMS_Project\\Web_API\\Web_API"
+2022-12-10 02:26:27.703 +05:30[INF] "Request starting HTTP/2.0 GET https://localhost:44323/weatherforecast  "
+2022-12-10 02:26:27.816 +05:30[INF] Executing endpoint '"Web_API.Controllers.WeatherForecastController.Get (Web_API)"'
+2022-12-10 02:26:27.834 +05:30[INF] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Web_API.WeatherForecast] Get()" on controller "Web_API.Controllers.WeatherForecastController" ("Web_API").
+2022-12-10 02:26:27.840 +05:30[INF] Executing ObjectResult, writing value of type '"Web_API.WeatherForecast[]"'.
+2022-12-10 02:26:27.868 +05:30[INF] Executed action "Web_API.Controllers.WeatherForecastController.Get (Web_API)" in 29.4809ms
+2022-12-10 02:26:27.870 +05:30[INF] Executed endpoint '"Web_API.Controllers.WeatherForecastController.Get (Web_API)"'
+2022-12-10 02:26:27.880 +05:30[INF] "Request finished in 178.9006ms 200 application/json; charset=utf-8"
+2022-12-10 02:26:30.303 +05:30[INF] "Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/User/UserLogout  "
+2022-12-10 02:26:30.313 +05:30[INF] CORS policy execution successful.
+2022-12-10 02:26:30.318 +05:30[INF] "Request finished in 13.5894ms 204 "
+2022-12-10 02:26:30.322 +05:30[INF] "Request starting HTTP/2.0 POST https://localhost:44323/api/User/UserLogout application/json 24"
+2022-12-10 02:26:30.324 +05:30[INF] CORS policy execution successful.
+2022-12-10 02:26:30.325 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.LogOut_User (Web_API)"'
+2022-12-10 02:26:30.336 +05:30[INF] Route matched with "{action = \"LogOut_User\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult LogOut_User(Web_API.Models.Pass)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-10 02:26:31.041 +05:30[WRN] No type was specified for the decimal column '"Price"' on entity type '"TShirtName"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2022-12-10 02:26:31.070 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-10 02:26:31.613 +05:30[INF] Executed DbCommand ("46"ms) [Parameters=["@__userID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [p].[ID], [p].[BRANCH_ID], [p].[CREAT_DATE], [p].[CREAT_EMP_ID], [p].[EMP_ID], [p].[LAST_L_DATE_TIME], [p].[LOCK1], [p].[LOCK2], [p].[LOG_IN_OUT], [p].[PASS], [p].[Path], [p].[USER_NAME]\r\nFROM [PASS] AS [p]\r\nWHERE [p].[EMP_ID] = @__userID_0"
+2022-12-10 02:26:56.437 +05:30[INF] Executing ObjectResult, writing value of type '"System.String"'.
+2022-12-10 02:26:56.439 +05:30[INF] Executed action "Web_API.Controllers.UserController.LogOut_User (Web_API)" in 26103.4964ms
+2022-12-10 02:26:56.440 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.LogOut_User (Web_API)"'
+2022-12-10 02:26:56.443 +05:30[INF] "Request finished in 26121.0436ms 200 text/plain; charset=utf-8"
+2022-12-10 02:28:32.204 +05:30[INF] Application Is Starting
+2022-12-10 02:28:33.699 +05:30[INF] User profile is available. Using '"C:\\Users\\Miyuranga\\AppData\\Local\\ASP.NET\\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-12-10 02:28:34.100 +05:30[INF] Application started. Press Ctrl+C to shut down.
+2022-12-10 02:28:34.100 +05:30[INF] Hosting environment: "Development"
+2022-12-10 02:28:34.100 +05:30[INF] Content root path: "F:\\HRMS_Project\\Web_API\\Web_API"
+2022-12-10 02:28:34.140 +05:30[INF] "Request starting HTTP/2.0 GET https://localhost:44323/weatherforecast  "
+2022-12-10 02:28:34.238 +05:30[INF] Executing endpoint '"Web_API.Controllers.WeatherForecastController.Get (Web_API)"'
+2022-12-10 02:28:34.257 +05:30[INF] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Web_API.WeatherForecast] Get()" on controller "Web_API.Controllers.WeatherForecastController" ("Web_API").
+2022-12-10 02:28:34.263 +05:30[INF] Executing ObjectResult, writing value of type '"Web_API.WeatherForecast[]"'.
+2022-12-10 02:28:34.292 +05:30[INF] Executed action "Web_API.Controllers.WeatherForecastController.Get (Web_API)" in 30.4565ms
+2022-12-10 02:28:34.293 +05:30[INF] Executed endpoint '"Web_API.Controllers.WeatherForecastController.Get (Web_API)"'
+2022-12-10 02:28:34.296 +05:30[INF] "Request finished in 158.7442ms 200 application/json; charset=utf-8"
+2022-12-10 02:28:45.353 +05:30[INF] "Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/User/LoginUser  "
+2022-12-10 02:28:45.359 +05:30[INF] CORS policy execution successful.
+2022-12-10 02:28:45.361 +05:30[INF] "Request finished in 8.5016ms 204 "
+2022-12-10 02:28:45.368 +05:30[INF] "Request starting HTTP/2.0 POST https://localhost:44323/api/User/LoginUser application/json 32"
+2022-12-10 02:28:45.370 +05:30[INF] CORS policy execution successful.
+2022-12-10 02:28:45.375 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.Login (Web_API)"'
+2022-12-10 02:28:45.386 +05:30[INF] Route matched with "{action = \"Login\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Login(Web_API.Models.Pass)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-10 02:28:45.550 +05:30[INF] Login_By  1
+2022-12-10 02:28:46.008 +05:30[WRN] No type was specified for the decimal column '"Price"' on entity type '"TShirtName"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2022-12-10 02:28:46.034 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-10 02:28:46.488 +05:30[INF] Executed DbCommand ("42"ms) [Parameters=["@__8__locals1_User_ID_0='?' (DbType = Int32), @__Get_Sha_Data_1='?' (Size = 150)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [p].[ID], [p].[BRANCH_ID], [p].[CREAT_DATE], [p].[CREAT_EMP_ID], [p].[EMP_ID], [p].[LAST_L_DATE_TIME], [p].[LOCK1], [p].[LOCK2], [p].[LOG_IN_OUT], [p].[PASS], [p].[Path], [p].[USER_NAME]\r\nFROM [PASS] AS [p]\r\nWHERE ([p].[EMP_ID] = @__8__locals1_User_ID_0) AND ([p].[PASS] = @__Get_Sha_Data_1)"
+2022-12-10 02:28:46.549 +05:30[INF] Executed DbCommand ("3"ms) [Parameters=["@__8__locals1_User_ID_0='?' (DbType = Int32), @__userIn_1='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [p].[ID], [p].[BRANCH_ID], [p].[CREAT_DATE], [p].[CREAT_EMP_ID], [p].[EMP_ID], [p].[LAST_L_DATE_TIME], [p].[LOCK1], [p].[LOCK2], [p].[LOG_IN_OUT], [p].[PASS], [p].[Path], [p].[USER_NAME]\r\nFROM [PASS] AS [p]\r\nWHERE ([p].[EMP_ID] = @__8__locals1_User_ID_0) AND ([p].[LOG_IN_OUT] = @__userIn_1)"
+2022-12-10 02:28:46.555 +05:30[INF] Executed DbCommand ("1"ms) [Parameters=["@__8__locals1_User_ID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [e].[ID], [e].[B_ID], [e].[D_ID], [e].[D/OF_A], [e].[D/OF_C], [e].[D/OF_JOIN], [e].[DESCRIPTION], [e].[EMP_ID], [e].[NFC_NUMBER], [e].[P_ID], [e].[RE_EMP_ID], [e].[W_T_ID]\r\nFROM [EMP_WORK_INFO] AS [e]\r\nWHERE [e].[EMP_ID] = @__8__locals1_User_ID_0"
+2022-12-10 02:28:46.584 +05:30[INF] Executed DbCommand ("2"ms) [Parameters=["@__8__locals1_User_ID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT [p].[POSITION_NAME] AS [PositionName]\r\nFROM [EMP_WORK_INFO] AS [e]\r\nINNER JOIN [POSITION] AS [p] ON [e].[P_ID] = [p].[P_ID]\r\nWHERE [e].[EMP_ID] = @__8__locals1_User_ID_0"
+2022-12-10 02:28:46.594 +05:30[INF] Executed DbCommand ("5"ms) [Parameters=["@__8__locals1_User_ID_0='?' (DbType = Int32), @__position_ID_1='?' (DbType = Int32), @__Department_ID_2='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT [n].[N_TITEL] AS [Notice_Titel], [n].[N_BODY] AS [Notice_body]\r\nFROM [NOTICE_VIEW] AS [n]\r\nWHERE (([n].[EMP_ID] = @__8__locals1_User_ID_0) OR ([n].[P_ID] = @__position_ID_1)) OR ([n].[D_ID] = @__Department_ID_2)"
+2022-12-10 02:28:46.717 +05:30[INF] Executing ObjectResult, writing value of type '"System.String"'.
+2022-12-10 02:28:46.720 +05:30[INF] Executed action "Web_API.Controllers.UserController.Login (Web_API)" in 1333.5001ms
+2022-12-10 02:28:46.720 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.Login (Web_API)"'
+2022-12-10 02:28:46.723 +05:30[INF] "Request finished in 1356.0423ms 200 text/plain; charset=utf-8"
+2022-12-10 02:28:46.825 +05:30[INF] "Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/User/UserLogout  "
+2022-12-10 02:28:46.825 +05:30[INF] CORS policy execution successful.
+2022-12-10 02:28:46.825 +05:30[INF] "Request finished in 0.535ms 204 "
+2022-12-10 02:28:46.835 +05:30[INF] "Request starting HTTP/2.0 POST https://localhost:44323/api/User/UserLogout application/json 24"
+2022-12-10 02:28:46.835 +05:30[INF] CORS policy execution successful.
+2022-12-10 02:28:46.837 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.LogOut_User (Web_API)"'
+2022-12-10 02:28:46.839 +05:30[INF] Route matched with "{action = \"LogOut_User\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult LogOut_User(Web_API.Models.Pass)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-10 02:28:46.872 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-10 02:28:46.879 +05:30[INF] Executed DbCommand ("2"ms) [Parameters=["@__userID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [p].[ID], [p].[BRANCH_ID], [p].[CREAT_DATE], [p].[CREAT_EMP_ID], [p].[EMP_ID], [p].[LAST_L_DATE_TIME], [p].[LOCK1], [p].[LOCK2], [p].[LOG_IN_OUT], [p].[PASS], [p].[Path], [p].[USER_NAME]\r\nFROM [PASS] AS [p]\r\nWHERE [p].[EMP_ID] = @__userID_0"
+2022-12-10 02:28:50.032 +05:30[INF] Executing ObjectResult, writing value of type '"System.String"'.
+2022-12-10 02:28:50.033 +05:30[INF] Executed action "Web_API.Controllers.UserController.LogOut_User (Web_API)" in 3194.3609ms
+2022-12-10 02:28:50.033 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.LogOut_User (Web_API)"'
+2022-12-10 02:28:50.034 +05:30[INF] "Request finished in 3199.0156ms 200 text/plain; charset=utf-8"
+2022-12-10 02:30:52.465 +05:30[INF] "Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/User/UserLogout  "
+2022-12-10 02:30:52.465 +05:30[INF] CORS policy execution successful.
+2022-12-10 02:30:52.473 +05:30[INF] "Request finished in 9.2142ms 204 "
+2022-12-10 02:30:52.478 +05:30[INF] "Request starting HTTP/2.0 POST https://localhost:44323/api/User/UserLogout application/json 24"
+2022-12-10 02:30:52.479 +05:30[INF] CORS policy execution successful.
+2022-12-10 02:30:52.480 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.LogOut_User (Web_API)"'
+2022-12-10 02:30:52.480 +05:30[INF] Route matched with "{action = \"LogOut_User\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult LogOut_User(Web_API.Models.Pass)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-10 02:30:52.489 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-10 02:30:52.499 +05:30[INF] Executed DbCommand ("4"ms) [Parameters=["@__userID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [p].[ID], [p].[BRANCH_ID], [p].[CREAT_DATE], [p].[CREAT_EMP_ID], [p].[EMP_ID], [p].[LAST_L_DATE_TIME], [p].[LOCK1], [p].[LOCK2], [p].[LOG_IN_OUT], [p].[PASS], [p].[Path], [p].[USER_NAME]\r\nFROM [PASS] AS [p]\r\nWHERE [p].[EMP_ID] = @__userID_0"
+2022-12-10 02:30:52.506 +05:30[INF] Executing ObjectResult, writing value of type '"System.String"'.
+2022-12-10 02:30:52.507 +05:30[INF] Executed action "Web_API.Controllers.UserController.LogOut_User (Web_API)" in 25.3286ms
+2022-12-10 02:30:52.507 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.LogOut_User (Web_API)"'
+2022-12-10 02:30:52.507 +05:30[INF] "Request finished in 28.954ms 200 text/plain; charset=utf-8"
+2022-12-10 02:44:28.572 +05:30[INF] "Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/User/LoginUser  "
+2022-12-10 02:44:28.573 +05:30[INF] CORS policy execution successful.
+2022-12-10 02:44:28.573 +05:30[INF] "Request finished in 1.5564ms 204 "
+2022-12-10 02:44:28.576 +05:30[INF] "Request starting HTTP/2.0 POST https://localhost:44323/api/User/LoginUser application/json 35"
+2022-12-10 02:44:28.576 +05:30[INF] CORS policy execution successful.
+2022-12-10 02:44:28.576 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.Login (Web_API)"'
+2022-12-10 02:44:28.576 +05:30[INF] Route matched with "{action = \"Login\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Login(Web_API.Models.Pass)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-10 02:44:28.577 +05:30[INF] Login_By  1003
+2022-12-10 02:44:28.583 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-10 02:44:28.591 +05:30[INF] Executed DbCommand ("2"ms) [Parameters=["@__8__locals1_User_ID_0='?' (DbType = Int32), @__Get_Sha_Data_1='?' (Size = 150)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [p].[ID], [p].[BRANCH_ID], [p].[CREAT_DATE], [p].[CREAT_EMP_ID], [p].[EMP_ID], [p].[LAST_L_DATE_TIME], [p].[LOCK1], [p].[LOCK2], [p].[LOG_IN_OUT], [p].[PASS], [p].[Path], [p].[USER_NAME]\r\nFROM [PASS] AS [p]\r\nWHERE ([p].[EMP_ID] = @__8__locals1_User_ID_0) AND ([p].[PASS] = @__Get_Sha_Data_1)"
+2022-12-10 02:44:28.594 +05:30[INF] Executed DbCommand ("1"ms) [Parameters=["@__8__locals1_User_ID_0='?' (DbType = Int32), @__userIn_1='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [p].[ID], [p].[BRANCH_ID], [p].[CREAT_DATE], [p].[CREAT_EMP_ID], [p].[EMP_ID], [p].[LAST_L_DATE_TIME], [p].[LOCK1], [p].[LOCK2], [p].[LOG_IN_OUT], [p].[PASS], [p].[Path], [p].[USER_NAME]\r\nFROM [PASS] AS [p]\r\nWHERE ([p].[EMP_ID] = @__8__locals1_User_ID_0) AND ([p].[LOG_IN_OUT] = @__userIn_1)"
+2022-12-10 02:44:28.597 +05:30[INF] Executed DbCommand ("2"ms) [Parameters=["@__8__locals1_User_ID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [e].[ID], [e].[B_ID], [e].[D_ID], [e].[D/OF_A], [e].[D/OF_C], [e].[D/OF_JOIN], [e].[DESCRIPTION], [e].[EMP_ID], [e].[NFC_NUMBER], [e].[P_ID], [e].[RE_EMP_ID], [e].[W_T_ID]\r\nFROM [EMP_WORK_INFO] AS [e]\r\nWHERE [e].[EMP_ID] = @__8__locals1_User_ID_0"
+2022-12-10 02:44:28.600 +05:30[INF] Executed DbCommand ("2"ms) [Parameters=["@__8__locals1_User_ID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT [p].[POSITION_NAME] AS [PositionName]\r\nFROM [EMP_WORK_INFO] AS [e]\r\nINNER JOIN [POSITION] AS [p] ON [e].[P_ID] = [p].[P_ID]\r\nWHERE [e].[EMP_ID] = @__8__locals1_User_ID_0"
+2022-12-10 02:44:28.604 +05:30[INF] Executed DbCommand ("4"ms) [Parameters=["@__8__locals1_User_ID_0='?' (DbType = Int32), @__position_ID_1='?' (DbType = Int32), @__Department_ID_2='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT [n].[N_TITEL] AS [Notice_Titel], [n].[N_BODY] AS [Notice_body]\r\nFROM [NOTICE_VIEW] AS [n]\r\nWHERE (([n].[EMP_ID] = @__8__locals1_User_ID_0) OR ([n].[P_ID] = @__position_ID_1)) OR ([n].[D_ID] = @__Department_ID_2)"
+2022-12-10 02:44:28.605 +05:30[INF] Executing ObjectResult, writing value of type '"System.String"'.
+2022-12-10 02:44:28.605 +05:30[INF] Executed action "Web_API.Controllers.UserController.Login (Web_API)" in 29.1004ms
+2022-12-10 02:44:28.606 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.Login (Web_API)"'
+2022-12-10 02:44:28.606 +05:30[INF] "Request finished in 30.2917ms 200 text/plain; charset=utf-8"
+2022-12-10 02:44:28.619 +05:30[INF] "Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/User/UserLogout  "
+2022-12-10 02:44:28.619 +05:30[INF] CORS policy execution successful.
+2022-12-10 02:44:28.619 +05:30[INF] "Request finished in 0.3587ms 204 "
+2022-12-10 02:44:28.621 +05:30[INF] "Request starting HTTP/2.0 POST https://localhost:44323/api/User/UserLogout application/json 27"
+2022-12-10 02:44:28.621 +05:30[INF] CORS policy execution successful.
+2022-12-10 02:44:28.621 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.LogOut_User (Web_API)"'
+2022-12-10 02:44:28.621 +05:30[INF] Route matched with "{action = \"LogOut_User\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult LogOut_User(Web_API.Models.Pass)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-10 02:44:28.622 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-10 02:44:28.628 +05:30[INF] Executed DbCommand ("5"ms) [Parameters=["@__userID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [p].[ID], [p].[BRANCH_ID], [p].[CREAT_DATE], [p].[CREAT_EMP_ID], [p].[EMP_ID], [p].[LAST_L_DATE_TIME], [p].[LOCK1], [p].[LOCK2], [p].[LOG_IN_OUT], [p].[PASS], [p].[Path], [p].[USER_NAME]\r\nFROM [PASS] AS [p]\r\nWHERE [p].[EMP_ID] = @__userID_0"
+2022-12-10 02:44:28.629 +05:30[INF] "Request starting HTTP/2.0 POST https://localhost:44323/api/User/UserLogout application/json 27"
+2022-12-10 02:44:28.629 +05:30[INF] CORS policy execution successful.
+2022-12-10 02:44:28.629 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.LogOut_User (Web_API)"'
+2022-12-10 02:44:28.629 +05:30[INF] Route matched with "{action = \"LogOut_User\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult LogOut_User(Web_API.Models.Pass)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-10 02:44:28.631 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-10 02:44:28.631 +05:30[INF] "Request starting HTTP/2.0 POST https://localhost:44323/api/User/UserLogout application/json 27"
+2022-12-10 02:44:28.632 +05:30[INF] CORS policy execution successful.
+2022-12-10 02:44:28.632 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.LogOut_User (Web_API)"'
+2022-12-10 02:44:28.632 +05:30[INF] Route matched with "{action = \"LogOut_User\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult LogOut_User(Web_API.Models.Pass)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-10 02:44:28.633 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-10 02:44:28.635 +05:30[INF] Executed DbCommand ("3"ms) [Parameters=["@__userID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [p].[ID], [p].[BRANCH_ID], [p].[CREAT_DATE], [p].[CREAT_EMP_ID], [p].[EMP_ID], [p].[LAST_L_DATE_TIME], [p].[LOCK1], [p].[LOCK2], [p].[LOG_IN_OUT], [p].[PASS], [p].[Path], [p].[USER_NAME]\r\nFROM [PASS] AS [p]\r\nWHERE [p].[EMP_ID] = @__userID_0"
+2022-12-10 02:44:28.660 +05:30[INF] Executed DbCommand ("0"ms) [Parameters=["@__userID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [p].[ID], [p].[BRANCH_ID], [p].[CREAT_DATE], [p].[CREAT_EMP_ID], [p].[EMP_ID], [p].[LAST_L_DATE_TIME], [p].[LOCK1], [p].[LOCK2], [p].[LOG_IN_OUT], [p].[PASS], [p].[Path], [p].[USER_NAME]\r\nFROM [PASS] AS [p]\r\nWHERE [p].[EMP_ID] = @__userID_0"
+2022-12-10 02:44:28.668 +05:30[INF] Executing ObjectResult, writing value of type '"System.String"'.
+2022-12-10 02:44:28.668 +05:30[INF] Executing ObjectResult, writing value of type '"System.String"'.
+2022-12-10 02:44:28.669 +05:30[INF] Executed action "Web_API.Controllers.UserController.LogOut_User (Web_API)" in 47.8557ms
+2022-12-10 02:44:28.669 +05:30[INF] Executed action "Web_API.Controllers.UserController.LogOut_User (Web_API)" in 39.6058ms
+2022-12-10 02:44:28.669 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.LogOut_User (Web_API)"'
+2022-12-10 02:44:28.669 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.LogOut_User (Web_API)"'
+2022-12-10 02:44:28.669 +05:30[INF] "Request finished in 48.4659ms 200 text/plain; charset=utf-8"
+2022-12-10 02:44:28.669 +05:30[INF] "Request finished in 40.1778ms 200 text/plain; charset=utf-8"
+2022-12-10 02:44:28.671 +05:30[INF] Executing ObjectResult, writing value of type '"System.String"'.
+2022-12-10 02:44:28.672 +05:30[INF] Executed action "Web_API.Controllers.UserController.LogOut_User (Web_API)" in 39.7468ms
+2022-12-10 02:44:28.672 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.LogOut_User (Web_API)"'
+2022-12-10 02:44:28.672 +05:30[INF] "Request finished in 40.2502ms 200 text/plain; charset=utf-8"
+2022-12-10 02:44:53.871 +05:30[INF] "Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/User/UserLogout  "
+2022-12-10 02:44:53.874 +05:30[INF] CORS policy execution successful.
+2022-12-10 02:44:53.875 +05:30[INF] "Request finished in 5.4333ms 204 "
+2022-12-10 02:44:53.882 +05:30[INF] "Request starting HTTP/2.0 POST https://localhost:44323/api/User/UserLogout application/json 27"
+2022-12-10 02:44:53.882 +05:30[INF] CORS policy execution successful.
+2022-12-10 02:44:53.882 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.LogOut_User (Web_API)"'
+2022-12-10 02:44:53.883 +05:30[INF] Route matched with "{action = \"LogOut_User\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult LogOut_User(Web_API.Models.Pass)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-10 02:44:53.884 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-10 02:44:53.886 +05:30[INF] Executed DbCommand ("1"ms) [Parameters=["@__userID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [p].[ID], [p].[BRANCH_ID], [p].[CREAT_DATE], [p].[CREAT_EMP_ID], [p].[EMP_ID], [p].[LAST_L_DATE_TIME], [p].[LOCK1], [p].[LOCK2], [p].[LOG_IN_OUT], [p].[PASS], [p].[Path], [p].[USER_NAME]\r\nFROM [PASS] AS [p]\r\nWHERE [p].[EMP_ID] = @__userID_0"
+2022-12-10 02:44:53.892 +05:30[INF] Executing ObjectResult, writing value of type '"System.String"'.
+2022-12-10 02:44:53.893 +05:30[INF] Executed action "Web_API.Controllers.UserController.LogOut_User (Web_API)" in 9.9011ms
+2022-12-10 02:44:53.893 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.LogOut_User (Web_API)"'
+2022-12-10 02:44:53.893 +05:30[INF] "Request finished in 13.7345ms 200 text/plain; charset=utf-8"
+2022-12-10 13:35:09.316 +05:30[INF] Application Is Starting
+2022-12-10 13:35:11.476 +05:30[INF] User profile is available. Using '"C:\\Users\\Miyuranga\\AppData\\Local\\ASP.NET\\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-12-10 13:35:11.931 +05:30[INF] Application started. Press Ctrl+C to shut down.
+2022-12-10 13:35:11.931 +05:30[INF] Hosting environment: "Development"
+2022-12-10 13:35:11.931 +05:30[INF] Content root path: "F:\\HRMS_Project\\Web_API\\Web_API"
+2022-12-10 13:35:11.990 +05:30[INF] "Request starting HTTP/1.1 HEAD https://localhost:44323/  "
+2022-12-10 13:35:11.990 +05:30[INF] "Request starting HTTP/2.0 GET https://localhost:44323/weatherforecast  "
+2022-12-10 13:35:12.236 +05:30[INF] Executing endpoint '"Web_API.Controllers.WeatherForecastController.Get (Web_API)"'
+2022-12-10 13:35:12.262 +05:30[INF] "Request finished in 274.555ms 404 "
+2022-12-10 13:35:12.266 +05:30[INF] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Web_API.WeatherForecast] Get()" on controller "Web_API.Controllers.WeatherForecastController" ("Web_API").
+2022-12-10 13:35:12.289 +05:30[INF] Executing ObjectResult, writing value of type '"Web_API.WeatherForecast[]"'.
+2022-12-10 13:35:12.315 +05:30[INF] Executed action "Web_API.Controllers.WeatherForecastController.Get (Web_API)" in 43.2784ms
+2022-12-10 13:35:12.315 +05:30[INF] Executed endpoint '"Web_API.Controllers.WeatherForecastController.Get (Web_API)"'
+2022-12-10 13:35:12.315 +05:30[INF] "Request finished in 328.6672ms 200 application/json; charset=utf-8"
+2022-12-10 13:35:12.356 +05:30[INF] "Request starting HTTP/2.0 GET https://localhost:44323/favicon.ico  "
+2022-12-10 13:35:12.369 +05:30[INF] "Request finished in 12.9235ms 404 "
+2022-12-10 13:35:38.778 +05:30[INF] "Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/User/LoginUser  "
+2022-12-10 13:35:38.789 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:35:38.792 +05:30[INF] "Request finished in 16.2999ms 204 "
+2022-12-10 13:35:38.793 +05:30[INF] "Request starting HTTP/2.0 POST https://localhost:44323/api/User/LoginUser application/json 32"
+2022-12-10 13:35:38.795 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:35:38.796 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.Login (Web_API)"'
+2022-12-10 13:35:38.807 +05:30[INF] Route matched with "{action = \"Login\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Login(Web_API.Models.Pass)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-10 13:35:39.412 +05:30[INF] Login_By  1
+2022-12-10 13:35:39.951 +05:30[WRN] No type was specified for the decimal column '"Price"' on entity type '"TShirtName"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2022-12-10 13:35:40.014 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-10 13:35:40.961 +05:30[INF] Executed DbCommand ("56"ms) [Parameters=["@__8__locals1_User_ID_0='?' (DbType = Int32), @__Get_Sha_Data_1='?' (Size = 150)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [p].[ID], [p].[BRANCH_ID], [p].[CREAT_DATE], [p].[CREAT_EMP_ID], [p].[EMP_ID], [p].[LAST_L_DATE_TIME], [p].[LOCK1], [p].[LOCK2], [p].[LOG_IN_OUT], [p].[PASS], [p].[Path], [p].[USER_NAME]\r\nFROM [PASS] AS [p]\r\nWHERE ([p].[EMP_ID] = @__8__locals1_User_ID_0) AND ([p].[PASS] = @__Get_Sha_Data_1)"
+2022-12-10 13:35:41.025 +05:30[INF] Executed DbCommand ("3"ms) [Parameters=["@__8__locals1_User_ID_0='?' (DbType = Int32), @__userIn_1='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [p].[ID], [p].[BRANCH_ID], [p].[CREAT_DATE], [p].[CREAT_EMP_ID], [p].[EMP_ID], [p].[LAST_L_DATE_TIME], [p].[LOCK1], [p].[LOCK2], [p].[LOG_IN_OUT], [p].[PASS], [p].[Path], [p].[USER_NAME]\r\nFROM [PASS] AS [p]\r\nWHERE ([p].[EMP_ID] = @__8__locals1_User_ID_0) AND ([p].[LOG_IN_OUT] = @__userIn_1)"
+2022-12-10 13:35:41.034 +05:30[INF] Executed DbCommand ("4"ms) [Parameters=["@__8__locals1_User_ID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [e].[ID], [e].[B_ID], [e].[D_ID], [e].[D/OF_A], [e].[D/OF_C], [e].[D/OF_JOIN], [e].[DESCRIPTION], [e].[EMP_ID], [e].[NFC_NUMBER], [e].[P_ID], [e].[RE_EMP_ID], [e].[W_T_ID]\r\nFROM [EMP_WORK_INFO] AS [e]\r\nWHERE [e].[EMP_ID] = @__8__locals1_User_ID_0"
+2022-12-10 13:35:41.066 +05:30[INF] Executed DbCommand ("3"ms) [Parameters=["@__8__locals1_User_ID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT [p].[POSITION_NAME] AS [PositionName]\r\nFROM [EMP_WORK_INFO] AS [e]\r\nINNER JOIN [POSITION] AS [p] ON [e].[P_ID] = [p].[P_ID]\r\nWHERE [e].[EMP_ID] = @__8__locals1_User_ID_0"
+2022-12-10 13:35:41.078 +05:30[INF] Executed DbCommand ("7"ms) [Parameters=["@__8__locals1_User_ID_0='?' (DbType = Int32), @__position_ID_1='?' (DbType = Int32), @__Department_ID_2='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT [n].[N_TITEL] AS [Notice_Titel], [n].[N_BODY] AS [Notice_body]\r\nFROM [NOTICE_VIEW] AS [n]\r\nWHERE (([n].[EMP_ID] = @__8__locals1_User_ID_0) OR ([n].[P_ID] = @__position_ID_1)) OR ([n].[D_ID] = @__Department_ID_2)"
+2022-12-10 13:35:41.369 +05:30[INF] Executing ObjectResult, writing value of type '"System.String"'.
+2022-12-10 13:35:41.371 +05:30[INF] Executed action "Web_API.Controllers.UserController.Login (Web_API)" in 2563.2754ms
+2022-12-10 13:35:41.371 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.Login (Web_API)"'
+2022-12-10 13:35:41.375 +05:30[INF] "Request finished in 2581.5011ms 200 text/plain; charset=utf-8"
+2022-12-10 13:35:41.407 +05:30[INF] "Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/User/UserLogout  "
+2022-12-10 13:35:41.407 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:35:41.407 +05:30[INF] "Request finished in 0.3408ms 204 "
+2022-12-10 13:35:41.410 +05:30[INF] "Request starting HTTP/2.0 POST https://localhost:44323/api/User/UserLogout application/json 24"
+2022-12-10 13:35:41.412 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:35:41.413 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.LogOut_User (Web_API)"'
+2022-12-10 13:35:41.415 +05:30[INF] Route matched with "{action = \"LogOut_User\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult LogOut_User(Web_API.Models.Pass)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-10 13:35:41.449 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-10 13:35:41.454 +05:30[INF] Executed DbCommand ("1"ms) [Parameters=["@__userID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [p].[ID], [p].[BRANCH_ID], [p].[CREAT_DATE], [p].[CREAT_EMP_ID], [p].[EMP_ID], [p].[LAST_L_DATE_TIME], [p].[LOCK1], [p].[LOCK2], [p].[LOG_IN_OUT], [p].[PASS], [p].[Path], [p].[USER_NAME]\r\nFROM [PASS] AS [p]\r\nWHERE [p].[EMP_ID] = @__userID_0"
+2022-12-10 13:35:41.575 +05:30[INF] Executing ObjectResult, writing value of type '"System.String"'.
+2022-12-10 13:35:41.575 +05:30[INF] Executed action "Web_API.Controllers.UserController.LogOut_User (Web_API)" in 160.0151ms
+2022-12-10 13:35:41.575 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.LogOut_User (Web_API)"'
+2022-12-10 13:35:41.575 +05:30[INF] "Request finished in 165.5764ms 200 text/plain; charset=utf-8"
+2022-12-10 13:35:47.077 +05:30[INF] "Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/User/UserLogout  "
+2022-12-10 13:35:47.077 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:35:47.078 +05:30[INF] "Request finished in 1.9793ms 204 "
+2022-12-10 13:35:47.078 +05:30[INF] "Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/User/workProfile  "
+2022-12-10 13:35:47.079 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:35:47.079 +05:30[INF] "Request finished in 1.1802ms 204 "
+2022-12-10 13:35:47.079 +05:30[INF] "Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/User/userProfile  "
+2022-12-10 13:35:47.081 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:35:47.081 +05:30[INF] "Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/User/userProfile  "
+2022-12-10 13:35:47.082 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:35:47.083 +05:30[INF] "Request finished in 2.1402ms 204 "
+2022-12-10 13:35:47.083 +05:30[INF] "Request finished in 1.7532ms 204 "
+2022-12-10 13:35:47.083 +05:30[INF] "Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/User/workProfile  "
+2022-12-10 13:35:47.084 +05:30[INF] "Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/User/UserLogout  "
+2022-12-10 13:35:47.084 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:35:47.084 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:35:47.084 +05:30[INF] "Request finished in 0.8465ms 204 "
+2022-12-10 13:35:47.084 +05:30[INF] "Request finished in 0.6923ms 204 "
+2022-12-10 13:35:47.085 +05:30[INF] "Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/User/UserLogout  "
+2022-12-10 13:35:47.086 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:35:47.087 +05:30[INF] "Request finished in 2.1277ms 204 "
+2022-12-10 13:35:47.087 +05:30[INF] "Request starting HTTP/2.0 POST https://localhost:44323/api/User/workProfile application/json 11"
+2022-12-10 13:35:47.088 +05:30[INF] "Request starting HTTP/2.0 POST https://localhost:44323/api/User/UserLogout application/json 24"
+2022-12-10 13:35:47.088 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:35:47.088 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:35:47.088 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.workProfile (Web_API)"'
+2022-12-10 13:35:47.088 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.LogOut_User (Web_API)"'
+2022-12-10 13:35:47.089 +05:30[INF] "Request starting HTTP/2.0 POST https://localhost:44323/api/User/UserLogout application/json 24"
+2022-12-10 13:35:47.089 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:35:47.089 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.LogOut_User (Web_API)"'
+2022-12-10 13:35:47.089 +05:30[INF] Route matched with "{action = \"LogOut_User\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult LogOut_User(Web_API.Models.Pass)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-10 13:35:47.089 +05:30[INF] Route matched with "{action = \"LogOut_User\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult LogOut_User(Web_API.Models.Pass)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-10 13:35:47.089 +05:30[INF] "Request starting HTTP/2.0 POST https://localhost:44323/api/User/workProfile application/json 11"
+2022-12-10 13:35:47.089 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:35:47.089 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.workProfile (Web_API)"'
+2022-12-10 13:35:47.090 +05:30[INF] Route matched with "{action = \"workProfile\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult workProfile(Web_API.Models.EmpWorkInfo)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-10 13:35:47.090 +05:30[INF] Route matched with "{action = \"workProfile\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult workProfile(Web_API.Models.EmpWorkInfo)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-10 13:35:47.092 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-10 13:35:47.092 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-10 13:35:47.120 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-10 13:35:47.120 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-10 13:35:47.133 +05:30[INF] Executed DbCommand ("4"ms) [Parameters=["@__userID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [p].[ID], [p].[BRANCH_ID], [p].[CREAT_DATE], [p].[CREAT_EMP_ID], [p].[EMP_ID], [p].[LAST_L_DATE_TIME], [p].[LOCK1], [p].[LOCK2], [p].[LOG_IN_OUT], [p].[PASS], [p].[Path], [p].[USER_NAME]\r\nFROM [PASS] AS [p]\r\nWHERE [p].[EMP_ID] = @__userID_0"
+2022-12-10 13:35:47.134 +05:30[INF] Executed DbCommand ("0"ms) [Parameters=["@__userID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [p].[ID], [p].[BRANCH_ID], [p].[CREAT_DATE], [p].[CREAT_EMP_ID], [p].[EMP_ID], [p].[LAST_L_DATE_TIME], [p].[LOCK1], [p].[LOCK2], [p].[LOG_IN_OUT], [p].[PASS], [p].[Path], [p].[USER_NAME]\r\nFROM [PASS] AS [p]\r\nWHERE [p].[EMP_ID] = @__userID_0"
+2022-12-10 13:35:47.135 +05:30[INF] Executed DbCommand ("2"ms) [Parameters=["@__UserID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [e].[ID], [e].[B_ID], [e].[D_ID], [e].[D/OF_A], [e].[D/OF_C], [e].[D/OF_JOIN], [e].[DESCRIPTION], [e].[EMP_ID], [e].[NFC_NUMBER], [e].[P_ID], [e].[RE_EMP_ID], [e].[W_T_ID]\r\nFROM [EMP_WORK_INFO] AS [e]\r\nWHERE [e].[EMP_ID] = @__UserID_0"
+2022-12-10 13:35:47.141 +05:30[INF] Executing ObjectResult, writing value of type '"System.String"'.
+2022-12-10 13:35:47.141 +05:30[INF] Executing ObjectResult, writing value of type '"System.String"'.
+2022-12-10 13:35:47.141 +05:30[INF] Executed action "Web_API.Controllers.UserController.LogOut_User (Web_API)" in 52.46ms
+2022-12-10 13:35:47.141 +05:30[INF] Executed action "Web_API.Controllers.UserController.LogOut_User (Web_API)" in 51.5633ms
+2022-12-10 13:35:47.141 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.LogOut_User (Web_API)"'
+2022-12-10 13:35:47.141 +05:30[INF] Executed DbCommand ("0"ms) [Parameters=["@__UserID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [e].[ID], [e].[B_ID], [e].[D_ID], [e].[D/OF_A], [e].[D/OF_C], [e].[D/OF_JOIN], [e].[DESCRIPTION], [e].[EMP_ID], [e].[NFC_NUMBER], [e].[P_ID], [e].[RE_EMP_ID], [e].[W_T_ID]\r\nFROM [EMP_WORK_INFO] AS [e]\r\nWHERE [e].[EMP_ID] = @__UserID_0"
+2022-12-10 13:35:47.141 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.LogOut_User (Web_API)"'
+2022-12-10 13:35:47.141 +05:30[INF] "Request finished in 54.0135ms 200 text/plain; charset=utf-8"
+2022-12-10 13:35:47.141 +05:30[INF] "Request finished in 52.9561ms 200 text/plain; charset=utf-8"
+2022-12-10 13:35:47.142 +05:30[INF] "Request starting HTTP/2.0 POST https://localhost:44323/api/User/UserLogout application/json 24"
+2022-12-10 13:35:47.142 +05:30[INF] "Request starting HTTP/2.0 POST https://localhost:44323/api/User/userProfile application/json 11"
+2022-12-10 13:35:47.142 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:35:47.142 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:35:47.142 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.LogOut_User (Web_API)"'
+2022-12-10 13:35:47.142 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.UserProfile (Web_API)"'
+2022-12-10 13:35:47.142 +05:30[INF] Route matched with "{action = \"LogOut_User\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult LogOut_User(Web_API.Models.Pass)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-10 13:35:47.143 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-10 13:35:47.143 +05:30[INF] Executed DbCommand ("0"ms) [Parameters=["@__userID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [p].[ID], [p].[BRANCH_ID], [p].[CREAT_DATE], [p].[CREAT_EMP_ID], [p].[EMP_ID], [p].[LAST_L_DATE_TIME], [p].[LOCK1], [p].[LOCK2], [p].[LOG_IN_OUT], [p].[PASS], [p].[Path], [p].[USER_NAME]\r\nFROM [PASS] AS [p]\r\nWHERE [p].[EMP_ID] = @__userID_0"
+2022-12-10 13:35:47.143 +05:30[INF] Route matched with "{action = \"UserProfile\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult UserProfile(Web_API.Models.EmpWorkInfo)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-10 13:35:47.145 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-10 13:35:47.145 +05:30[INF] Executing ObjectResult, writing value of type '"System.String"'.
+2022-12-10 13:35:47.147 +05:30[INF] Executed action "Web_API.Controllers.UserController.LogOut_User (Web_API)" in 5.2355ms
+2022-12-10 13:35:47.147 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.LogOut_User (Web_API)"'
+2022-12-10 13:35:47.148 +05:30[INF] "Request finished in 5.6879ms 200 text/plain; charset=utf-8"
+2022-12-10 13:35:47.148 +05:30[INF] "Request starting HTTP/2.0 POST https://localhost:44323/api/User/userProfile application/json 11"
+2022-12-10 13:35:47.148 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:35:47.148 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.UserProfile (Web_API)"'
+2022-12-10 13:35:47.148 +05:30[INF] Route matched with "{action = \"UserProfile\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult UserProfile(Web_API.Models.EmpWorkInfo)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-10 13:35:47.148 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-10 13:35:47.157 +05:30[INF] Executed DbCommand ("6"ms) [Parameters=["@__UserID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [e].[EMP_ID], [e].[ADDRESS], [e].[BLOOD_ID], [e].[CREATE_EMP_ID], [e].[DOB], [e].[EMAIL], [e].[EMP_CREATE_DATE], [e].[FRIST_NAME], [e].[GENDER], [e].[LANGUAGE], [e].[MOBILE], [e].[NAME_SURENAME], [e].[NIC], [e].[STATUS]\r\nFROM [EMP_INFO] AS [e]\r\nWHERE [e].[EMP_ID] = @__UserID_0"
+2022-12-10 13:35:47.161 +05:30[INF] Executed DbCommand ("10"ms) [Parameters=["@__UserID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [e].[EMP_ID], [e].[ADDRESS], [e].[BLOOD_ID], [e].[CREATE_EMP_ID], [e].[DOB], [e].[EMAIL], [e].[EMP_CREATE_DATE], [e].[FRIST_NAME], [e].[GENDER], [e].[LANGUAGE], [e].[MOBILE], [e].[NAME_SURENAME], [e].[NIC], [e].[STATUS]\r\nFROM [EMP_INFO] AS [e]\r\nWHERE [e].[EMP_ID] = @__UserID_0"
+2022-12-10 13:35:47.171 +05:30[INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Web_API.Models.List.Work_Info, Web_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-12-10 13:35:47.172 +05:30[INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Web_API.Models.List.Work_Info, Web_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-12-10 13:35:47.174 +05:30[INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Web_API.Models.List.User_Info, Web_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-12-10 13:35:47.174 +05:30[INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Web_API.Models.List.User_Info, Web_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-12-10 13:35:47.174 +05:30[INF] Executed action "Web_API.Controllers.UserController.workProfile (Web_API)" in 84.1141ms
+2022-12-10 13:35:47.174 +05:30[INF] Executed action "Web_API.Controllers.UserController.workProfile (Web_API)" in 84.2591ms
+2022-12-10 13:35:47.175 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.workProfile (Web_API)"'
+2022-12-10 13:35:47.175 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.workProfile (Web_API)"'
+2022-12-10 13:35:47.175 +05:30[INF] "Request finished in 87.3089ms 200 application/json; charset=utf-8"
+2022-12-10 13:35:47.175 +05:30[INF] "Request finished in 85.8322ms 200 application/json; charset=utf-8"
+2022-12-10 13:35:47.176 +05:30[INF] Executed action "Web_API.Controllers.UserController.UserProfile (Web_API)" in 28.061ms
+2022-12-10 13:35:47.176 +05:30[INF] Executed action "Web_API.Controllers.UserController.UserProfile (Web_API)" in 32.8862ms
+2022-12-10 13:35:47.176 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.UserProfile (Web_API)"'
+2022-12-10 13:35:47.176 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.UserProfile (Web_API)"'
+2022-12-10 13:35:47.176 +05:30[INF] "Request finished in 28.5461ms 200 application/json; charset=utf-8"
+2022-12-10 13:35:47.176 +05:30[INF] "Request finished in 34.3878ms 200 application/json; charset=utf-8"
+2022-12-10 13:45:21.732 +05:30[INF] Application Is Starting
+2022-12-10 13:45:22.778 +05:30[INF] User profile is available. Using '"C:\\Users\\Miyuranga\\AppData\\Local\\ASP.NET\\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-12-10 13:45:23.118 +05:30[INF] Application started. Press Ctrl+C to shut down.
+2022-12-10 13:45:23.118 +05:30[INF] Hosting environment: "Development"
+2022-12-10 13:45:23.118 +05:30[INF] Content root path: "F:\\HRMS_Project\\Web_API\\Web_API"
+2022-12-10 13:45:23.178 +05:30[INF] "Request starting HTTP/2.0 GET https://localhost:44323/weatherforecast  "
+2022-12-10 13:45:23.420 +05:30[INF] Executing endpoint '"Web_API.Controllers.WeatherForecastController.Get (Web_API)"'
+2022-12-10 13:45:23.443 +05:30[INF] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Web_API.WeatherForecast] Get()" on controller "Web_API.Controllers.WeatherForecastController" ("Web_API").
+2022-12-10 13:45:23.449 +05:30[INF] Executing ObjectResult, writing value of type '"Web_API.WeatherForecast[]"'.
+2022-12-10 13:45:23.502 +05:30[INF] Executed action "Web_API.Controllers.WeatherForecastController.Get (Web_API)" in 54.5054ms
+2022-12-10 13:45:23.503 +05:30[INF] Executed endpoint '"Web_API.Controllers.WeatherForecastController.Get (Web_API)"'
+2022-12-10 13:45:23.510 +05:30[INF] "Request finished in 334.3561ms 200 application/json; charset=utf-8"
+2022-12-10 13:45:23.564 +05:30[INF] "Request starting HTTP/2.0 GET https://localhost:44323/favicon.ico  "
+2022-12-10 13:45:23.577 +05:30[INF] "Request finished in 12.2379ms 404 "
+2022-12-10 13:45:28.033 +05:30[INF] "Request starting HTTP/1.1 HEAD https://localhost:44323/  "
+2022-12-10 13:45:28.055 +05:30[INF] "Request finished in 21.5649ms 404 "
+2022-12-10 13:46:21.753 +05:30[INF] "Request starting HTTP/1.1 POST https://localhost:44323/api/User/userProfile/ application/json 31"
+2022-12-10 13:46:21.759 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.UserProfile (Web_API)"'
+2022-12-10 13:46:21.773 +05:30[INF] Route matched with "{action = \"UserProfile\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult UserProfile(Web_API.Models.EmpWorkInfo)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-10 13:46:22.954 +05:30[WRN] No type was specified for the decimal column '"Price"' on entity type '"TShirtName"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2022-12-10 13:46:22.989 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-10 13:46:23.726 +05:30[INF] Executed DbCommand ("72"ms) [Parameters=["@__UserID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [e].[EMP_ID], [e].[ADDRESS], [e].[BLOOD_ID], [e].[CREATE_EMP_ID], [e].[DOB], [e].[EMAIL], [e].[EMP_CREATE_DATE], [e].[FRIST_NAME], [e].[GENDER], [e].[LANGUAGE], [e].[MOBILE], [e].[NAME_SURENAME], [e].[NIC], [e].[STATUS]\r\nFROM [EMP_INFO] AS [e]\r\nWHERE [e].[EMP_ID] = @__UserID_0"
+2022-12-10 13:46:23.838 +05:30[INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Web_API.Models.List.User_Info, Web_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-12-10 13:46:23.841 +05:30[INF] Executed action "Web_API.Controllers.UserController.UserProfile (Web_API)" in 2068.0508ms
+2022-12-10 13:46:23.841 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.UserProfile (Web_API)"'
+2022-12-10 13:46:23.844 +05:30[INF] "Request finished in 2093.0194ms 200 application/json; charset=utf-8"
+2022-12-10 13:46:58.307 +05:30[INF] "Request starting HTTP/1.1 POST https://localhost:44323/api/User/userProfile/ application/json 31"
+2022-12-10 13:46:58.310 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.UserProfile (Web_API)"'
+2022-12-10 13:46:58.312 +05:30[INF] Route matched with "{action = \"UserProfile\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult UserProfile(Web_API.Models.EmpWorkInfo)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-10 13:46:58.324 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-10 13:46:58.332 +05:30[INF] Executed DbCommand ("3"ms) [Parameters=["@__UserID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [e].[EMP_ID], [e].[ADDRESS], [e].[BLOOD_ID], [e].[CREATE_EMP_ID], [e].[DOB], [e].[EMAIL], [e].[EMP_CREATE_DATE], [e].[FRIST_NAME], [e].[GENDER], [e].[LANGUAGE], [e].[MOBILE], [e].[NAME_SURENAME], [e].[NIC], [e].[STATUS]\r\nFROM [EMP_INFO] AS [e]\r\nWHERE [e].[EMP_ID] = @__UserID_0"
+2022-12-10 13:46:58.335 +05:30[INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Web_API.Models.List.User_Info, Web_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-12-10 13:46:58.335 +05:30[INF] Executed action "Web_API.Controllers.UserController.UserProfile (Web_API)" in 23.1777ms
+2022-12-10 13:46:58.335 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.UserProfile (Web_API)"'
+2022-12-10 13:46:58.335 +05:30[INF] "Request finished in 29.9805ms 200 application/json; charset=utf-8"
+2022-12-10 13:47:00.087 +05:30[INF] "Request starting HTTP/1.1 POST https://localhost:44323/api/User/userProfile/ application/json 31"
+2022-12-10 13:47:00.088 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.UserProfile (Web_API)"'
+2022-12-10 13:47:00.088 +05:30[INF] Route matched with "{action = \"UserProfile\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult UserProfile(Web_API.Models.EmpWorkInfo)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-10 13:47:00.091 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-10 13:47:00.095 +05:30[INF] Executed DbCommand ("2"ms) [Parameters=["@__UserID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [e].[EMP_ID], [e].[ADDRESS], [e].[BLOOD_ID], [e].[CREATE_EMP_ID], [e].[DOB], [e].[EMAIL], [e].[EMP_CREATE_DATE], [e].[FRIST_NAME], [e].[GENDER], [e].[LANGUAGE], [e].[MOBILE], [e].[NAME_SURENAME], [e].[NIC], [e].[STATUS]\r\nFROM [EMP_INFO] AS [e]\r\nWHERE [e].[EMP_ID] = @__UserID_0"
+2022-12-10 13:47:00.097 +05:30[INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Web_API.Models.List.User_Info, Web_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-12-10 13:47:00.098 +05:30[INF] Executed action "Web_API.Controllers.UserController.UserProfile (Web_API)" in 9.1375ms
+2022-12-10 13:47:00.098 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.UserProfile (Web_API)"'
+2022-12-10 13:47:00.098 +05:30[INF] "Request finished in 11.1396ms 200 application/json; charset=utf-8"
+2022-12-10 13:47:44.045 +05:30[INF] "Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/User/LoginUser  "
+2022-12-10 13:47:44.051 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:47:44.053 +05:30[INF] "Request finished in 12.2323ms 204 "
+2022-12-10 13:47:44.061 +05:30[INF] "Request starting HTTP/2.0 POST https://localhost:44323/api/User/LoginUser application/json 32"
+2022-12-10 13:47:44.061 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:47:44.063 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.Login (Web_API)"'
+2022-12-10 13:47:44.066 +05:30[INF] Route matched with "{action = \"Login\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Login(Web_API.Models.Pass)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-10 13:47:44.073 +05:30[INF] Login_By  1
+2022-12-10 13:47:44.075 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-10 13:47:44.139 +05:30[INF] Executed DbCommand ("51"ms) [Parameters=["@__8__locals1_User_ID_0='?' (DbType = Int32), @__Get_Sha_Data_1='?' (Size = 150)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [p].[ID], [p].[BRANCH_ID], [p].[CREAT_DATE], [p].[CREAT_EMP_ID], [p].[EMP_ID], [p].[LAST_L_DATE_TIME], [p].[LOCK1], [p].[LOCK2], [p].[LOG_IN_OUT], [p].[PASS], [p].[Path], [p].[USER_NAME]\r\nFROM [PASS] AS [p]\r\nWHERE ([p].[EMP_ID] = @__8__locals1_User_ID_0) AND ([p].[PASS] = @__Get_Sha_Data_1)"
+2022-12-10 13:47:44.177 +05:30[INF] Executed DbCommand ("1"ms) [Parameters=["@__8__locals1_User_ID_0='?' (DbType = Int32), @__userIn_1='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [p].[ID], [p].[BRANCH_ID], [p].[CREAT_DATE], [p].[CREAT_EMP_ID], [p].[EMP_ID], [p].[LAST_L_DATE_TIME], [p].[LOCK1], [p].[LOCK2], [p].[LOG_IN_OUT], [p].[PASS], [p].[Path], [p].[USER_NAME]\r\nFROM [PASS] AS [p]\r\nWHERE ([p].[EMP_ID] = @__8__locals1_User_ID_0) AND ([p].[LOG_IN_OUT] = @__userIn_1)"
+2022-12-10 13:47:44.177 +05:30[INF] Executing ObjectResult, writing value of type '"System.String"'.
+2022-12-10 13:47:44.182 +05:30[INF] Executed action "Web_API.Controllers.UserController.Login (Web_API)" in 115.8266ms
+2022-12-10 13:47:44.182 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.Login (Web_API)"'
+2022-12-10 13:47:44.183 +05:30[INF] "Request finished in 124.2379ms 200 text/plain; charset=utf-8"
+2022-12-10 13:48:04.837 +05:30[INF] "Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/User/LoginUser  "
+2022-12-10 13:48:04.840 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:48:04.841 +05:30[INF] "Request finished in 4.6598ms 204 "
+2022-12-10 13:48:04.846 +05:30[INF] "Request starting HTTP/2.0 POST https://localhost:44323/api/User/LoginUser application/json 32"
+2022-12-10 13:48:04.846 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:48:04.847 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.Login (Web_API)"'
+2022-12-10 13:48:04.847 +05:30[INF] Route matched with "{action = \"Login\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Login(Web_API.Models.Pass)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-10 13:48:04.849 +05:30[INF] Login_By  1
+2022-12-10 13:48:04.850 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-10 13:48:04.856 +05:30[INF] Executed DbCommand ("2"ms) [Parameters=["@__8__locals1_User_ID_0='?' (DbType = Int32), @__Get_Sha_Data_1='?' (Size = 150)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [p].[ID], [p].[BRANCH_ID], [p].[CREAT_DATE], [p].[CREAT_EMP_ID], [p].[EMP_ID], [p].[LAST_L_DATE_TIME], [p].[LOCK1], [p].[LOCK2], [p].[LOG_IN_OUT], [p].[PASS], [p].[Path], [p].[USER_NAME]\r\nFROM [PASS] AS [p]\r\nWHERE ([p].[EMP_ID] = @__8__locals1_User_ID_0) AND ([p].[PASS] = @__Get_Sha_Data_1)"
+2022-12-10 13:48:04.861 +05:30[INF] Executed DbCommand ("2"ms) [Parameters=["@__8__locals1_User_ID_0='?' (DbType = Int32), @__userIn_1='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [p].[ID], [p].[BRANCH_ID], [p].[CREAT_DATE], [p].[CREAT_EMP_ID], [p].[EMP_ID], [p].[LAST_L_DATE_TIME], [p].[LOCK1], [p].[LOCK2], [p].[LOG_IN_OUT], [p].[PASS], [p].[Path], [p].[USER_NAME]\r\nFROM [PASS] AS [p]\r\nWHERE ([p].[EMP_ID] = @__8__locals1_User_ID_0) AND ([p].[LOG_IN_OUT] = @__userIn_1)"
+2022-12-10 13:48:05.112 +05:30[INF] Executed DbCommand ("242"ms) [Parameters=["@__8__locals1_User_ID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [e].[ID], [e].[B_ID], [e].[D_ID], [e].[D/OF_A], [e].[D/OF_C], [e].[D/OF_JOIN], [e].[DESCRIPTION], [e].[EMP_ID], [e].[NFC_NUMBER], [e].[P_ID], [e].[RE_EMP_ID], [e].[W_T_ID]\r\nFROM [EMP_WORK_INFO] AS [e]\r\nWHERE [e].[EMP_ID] = @__8__locals1_User_ID_0"
+2022-12-10 13:48:05.248 +05:30[INF] Executed DbCommand ("46"ms) [Parameters=["@__8__locals1_User_ID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT [p].[POSITION_NAME] AS [PositionName]\r\nFROM [EMP_WORK_INFO] AS [e]\r\nINNER JOIN [POSITION] AS [p] ON [e].[P_ID] = [p].[P_ID]\r\nWHERE [e].[EMP_ID] = @__8__locals1_User_ID_0"
+2022-12-10 13:48:05.300 +05:30[INF] Executed DbCommand ("42"ms) [Parameters=["@__8__locals1_User_ID_0='?' (DbType = Int32), @__position_ID_1='?' (DbType = Int32), @__Department_ID_2='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT [n].[N_TITEL] AS [Notice_Titel], [n].[N_BODY] AS [Notice_body]\r\nFROM [NOTICE_VIEW] AS [n]\r\nWHERE (([n].[EMP_ID] = @__8__locals1_User_ID_0) OR ([n].[P_ID] = @__position_ID_1)) OR ([n].[D_ID] = @__Department_ID_2)"
+2022-12-10 13:48:05.567 +05:30[INF] Executing ObjectResult, writing value of type '"System.String"'.
+2022-12-10 13:48:05.568 +05:30[INF] Executed action "Web_API.Controllers.UserController.Login (Web_API)" in 720.5039ms
+2022-12-10 13:48:05.569 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.Login (Web_API)"'
+2022-12-10 13:48:05.572 +05:30[INF] "Request finished in 726.2022ms 200 text/plain; charset=utf-8"
+2022-12-10 13:48:05.647 +05:30[INF] "Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/User/UserLogout  "
+2022-12-10 13:48:05.647 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:48:05.647 +05:30[INF] "Request finished in 0.7178ms 204 "
+2022-12-10 13:48:05.650 +05:30[INF] "Request starting HTTP/2.0 POST https://localhost:44323/api/User/UserLogout application/json 24"
+2022-12-10 13:48:05.650 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:48:05.650 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.LogOut_User (Web_API)"'
+2022-12-10 13:48:05.652 +05:30[INF] Route matched with "{action = \"LogOut_User\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult LogOut_User(Web_API.Models.Pass)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-10 13:48:05.658 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-10 13:48:05.663 +05:30[INF] Executed DbCommand ("2"ms) [Parameters=["@__userID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [p].[ID], [p].[BRANCH_ID], [p].[CREAT_DATE], [p].[CREAT_EMP_ID], [p].[EMP_ID], [p].[LAST_L_DATE_TIME], [p].[LOCK1], [p].[LOCK2], [p].[LOG_IN_OUT], [p].[PASS], [p].[Path], [p].[USER_NAME]\r\nFROM [PASS] AS [p]\r\nWHERE [p].[EMP_ID] = @__userID_0"
+2022-12-10 13:48:05.811 +05:30[INF] Executing ObjectResult, writing value of type '"System.String"'.
+2022-12-10 13:48:05.812 +05:30[INF] Executed action "Web_API.Controllers.UserController.LogOut_User (Web_API)" in 158.9787ms
+2022-12-10 13:48:05.812 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.LogOut_User (Web_API)"'
+2022-12-10 13:48:05.812 +05:30[INF] "Request finished in 161.7663ms 200 text/plain; charset=utf-8"
+2022-12-10 13:48:08.585 +05:30[INF] "Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/User/workProfile  "
+2022-12-10 13:48:08.585 +05:30[INF] "Request starting HTTP/2.0 POST https://localhost:44323/api/User/UserLogout application/json 24"
+2022-12-10 13:48:08.585 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:48:08.585 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:48:08.586 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.LogOut_User (Web_API)"'
+2022-12-10 13:48:08.586 +05:30[INF] Route matched with "{action = \"LogOut_User\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult LogOut_User(Web_API.Models.Pass)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-10 13:48:08.586 +05:30[INF] "Request finished in 1.1906ms 204 "
+2022-12-10 13:48:08.587 +05:30[INF] "Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/User/userProfile  "
+2022-12-10 13:48:08.587 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:48:08.587 +05:30[INF] "Request finished in 0.3477ms 204 "
+2022-12-10 13:48:08.589 +05:30[INF] "Request starting HTTP/2.0 POST https://localhost:44323/api/User/UserLogout application/json 24"
+2022-12-10 13:48:08.589 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-10 13:48:08.589 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:48:08.589 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.LogOut_User (Web_API)"'
+2022-12-10 13:48:08.589 +05:30[INF] Route matched with "{action = \"LogOut_User\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult LogOut_User(Web_API.Models.Pass)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-10 13:48:08.590 +05:30[INF] "Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/User/workProfile  "
+2022-12-10 13:48:08.590 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:48:08.590 +05:30[INF] "Request starting HTTP/2.0 POST https://localhost:44323/api/User/userProfile application/json 11"
+2022-12-10 13:48:08.590 +05:30[INF] "Request finished in 0.1997ms 204 "
+2022-12-10 13:48:08.590 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:48:08.590 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.UserProfile (Web_API)"'
+2022-12-10 13:48:08.590 +05:30[INF] Route matched with "{action = \"UserProfile\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult UserProfile(Web_API.Models.EmpWorkInfo)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-10 13:48:08.592 +05:30[INF] "Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/User/userProfile  "
+2022-12-10 13:48:08.592 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:48:08.592 +05:30[INF] "Request finished in 0.3037ms 204 "
+2022-12-10 13:48:08.592 +05:30[INF] "Request starting HTTP/2.0 POST https://localhost:44323/api/User/UserLogout application/json 24"
+2022-12-10 13:48:08.592 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-10 13:48:08.592 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:48:08.592 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.LogOut_User (Web_API)"'
+2022-12-10 13:48:08.592 +05:30[INF] Route matched with "{action = \"LogOut_User\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult LogOut_User(Web_API.Models.Pass)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-10 13:48:08.593 +05:30[INF] Executed DbCommand ("3"ms) [Parameters=["@__userID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [p].[ID], [p].[BRANCH_ID], [p].[CREAT_DATE], [p].[CREAT_EMP_ID], [p].[EMP_ID], [p].[LAST_L_DATE_TIME], [p].[LOCK1], [p].[LOCK2], [p].[LOG_IN_OUT], [p].[PASS], [p].[Path], [p].[USER_NAME]\r\nFROM [PASS] AS [p]\r\nWHERE [p].[EMP_ID] = @__userID_0"
+2022-12-10 13:48:08.593 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-10 13:48:08.595 +05:30[INF] Executed DbCommand ("1"ms) [Parameters=["@__userID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [p].[ID], [p].[BRANCH_ID], [p].[CREAT_DATE], [p].[CREAT_EMP_ID], [p].[EMP_ID], [p].[LAST_L_DATE_TIME], [p].[LOCK1], [p].[LOCK2], [p].[LOG_IN_OUT], [p].[PASS], [p].[Path], [p].[USER_NAME]\r\nFROM [PASS] AS [p]\r\nWHERE [p].[EMP_ID] = @__userID_0"
+2022-12-10 13:48:08.599 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-10 13:48:08.602 +05:30[INF] Executed DbCommand ("3"ms) [Parameters=["@__UserID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [e].[EMP_ID], [e].[ADDRESS], [e].[BLOOD_ID], [e].[CREATE_EMP_ID], [e].[DOB], [e].[EMAIL], [e].[EMP_CREATE_DATE], [e].[FRIST_NAME], [e].[GENDER], [e].[LANGUAGE], [e].[MOBILE], [e].[NAME_SURENAME], [e].[NIC], [e].[STATUS]\r\nFROM [EMP_INFO] AS [e]\r\nWHERE [e].[EMP_ID] = @__UserID_0"
+2022-12-10 13:48:08.603 +05:30[INF] "Request starting HTTP/2.0 POST https://localhost:44323/api/User/workProfile application/json 11"
+2022-12-10 13:48:08.603 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:48:08.603 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.workProfile (Web_API)"'
+2022-12-10 13:48:08.605 +05:30[INF] Route matched with "{action = \"workProfile\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult workProfile(Web_API.Models.EmpWorkInfo)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-10 13:48:08.606 +05:30[INF] Executing ObjectResult, writing value of type '"System.String"'.
+2022-12-10 13:48:08.606 +05:30[INF] Executed action "Web_API.Controllers.UserController.LogOut_User (Web_API)" in 20.2325ms
+2022-12-10 13:48:08.606 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.LogOut_User (Web_API)"'
+2022-12-10 13:48:08.606 +05:30[INF] "Request finished in 22.4441ms 200 text/plain; charset=utf-8"
+2022-12-10 13:48:08.607 +05:30[INF] "Request starting HTTP/2.0 POST https://localhost:44323/api/User/workProfile application/json 11"
+2022-12-10 13:48:08.607 +05:30[INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Web_API.Models.List.User_Info, Web_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-12-10 13:48:08.607 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:48:08.607 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.workProfile (Web_API)"'
+2022-12-10 13:48:08.607 +05:30[INF] Route matched with "{action = \"workProfile\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult workProfile(Web_API.Models.EmpWorkInfo)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-10 13:48:08.608 +05:30[INF] Executed action "Web_API.Controllers.UserController.UserProfile (Web_API)" in 17.2397ms
+2022-12-10 13:48:08.608 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.UserProfile (Web_API)"'
+2022-12-10 13:48:08.608 +05:30[INF] "Request finished in 17.5774ms 200 application/json; charset=utf-8"
+2022-12-10 13:48:08.608 +05:30[INF] "Request starting HTTP/2.0 POST https://localhost:44323/api/User/userProfile application/json 11"
+2022-12-10 13:48:08.608 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:48:08.608 +05:30[INF] Executed DbCommand ("1"ms) [Parameters=["@__userID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [p].[ID], [p].[BRANCH_ID], [p].[CREAT_DATE], [p].[CREAT_EMP_ID], [p].[EMP_ID], [p].[LAST_L_DATE_TIME], [p].[LOCK1], [p].[LOCK2], [p].[LOG_IN_OUT], [p].[PASS], [p].[Path], [p].[USER_NAME]\r\nFROM [PASS] AS [p]\r\nWHERE [p].[EMP_ID] = @__userID_0"
+2022-12-10 13:48:08.608 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-10 13:48:08.608 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.UserProfile (Web_API)"'
+2022-12-10 13:48:08.608 +05:30[INF] Route matched with "{action = \"UserProfile\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult UserProfile(Web_API.Models.EmpWorkInfo)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-10 13:48:08.609 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-10 13:48:08.609 +05:30[INF] Executing ObjectResult, writing value of type '"System.String"'.
+2022-12-10 13:48:08.609 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-10 13:48:08.609 +05:30[INF] Executed action "Web_API.Controllers.UserController.LogOut_User (Web_API)" in 16.9365ms
+2022-12-10 13:48:08.609 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.LogOut_User (Web_API)"'
+2022-12-10 13:48:08.609 +05:30[INF] "Request finished in 17.2478ms 200 text/plain; charset=utf-8"
+2022-12-10 13:48:08.615 +05:30[INF] Executed DbCommand ("7"ms) [Parameters=["@__UserID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [e].[EMP_ID], [e].[ADDRESS], [e].[BLOOD_ID], [e].[CREATE_EMP_ID], [e].[DOB], [e].[EMAIL], [e].[EMP_CREATE_DATE], [e].[FRIST_NAME], [e].[GENDER], [e].[LANGUAGE], [e].[MOBILE], [e].[NAME_SURENAME], [e].[NIC], [e].[STATUS]\r\nFROM [EMP_INFO] AS [e]\r\nWHERE [e].[EMP_ID] = @__UserID_0"
+2022-12-10 13:48:08.617 +05:30[INF] Executing ObjectResult, writing value of type '"System.String"'.
+2022-12-10 13:48:08.620 +05:30[INF] Executed DbCommand ("6"ms) [Parameters=["@__UserID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [e].[ID], [e].[B_ID], [e].[D_ID], [e].[D/OF_A], [e].[D/OF_C], [e].[D/OF_JOIN], [e].[DESCRIPTION], [e].[EMP_ID], [e].[NFC_NUMBER], [e].[P_ID], [e].[RE_EMP_ID], [e].[W_T_ID]\r\nFROM [EMP_WORK_INFO] AS [e]\r\nWHERE [e].[EMP_ID] = @__UserID_0"
+2022-12-10 13:48:08.620 +05:30[INF] Executed action "Web_API.Controllers.UserController.LogOut_User (Web_API)" in 30.3343ms
+2022-12-10 13:48:08.620 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.LogOut_User (Web_API)"'
+2022-12-10 13:48:08.620 +05:30[INF] "Request finished in 31.1619ms 200 text/plain; charset=utf-8"
+2022-12-10 13:48:08.621 +05:30[INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Web_API.Models.List.User_Info, Web_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-12-10 13:48:08.623 +05:30[INF] Executed action "Web_API.Controllers.UserController.UserProfile (Web_API)" in 15.1702ms
+2022-12-10 13:48:08.624 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.UserProfile (Web_API)"'
+2022-12-10 13:48:08.624 +05:30[INF] "Request finished in 15.7042ms 200 application/json; charset=utf-8"
+2022-12-10 13:48:08.628 +05:30[INF] Executed DbCommand ("0"ms) [Parameters=["@__UserID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [e].[ID], [e].[B_ID], [e].[D_ID], [e].[D/OF_A], [e].[D/OF_C], [e].[D/OF_JOIN], [e].[DESCRIPTION], [e].[EMP_ID], [e].[NFC_NUMBER], [e].[P_ID], [e].[RE_EMP_ID], [e].[W_T_ID]\r\nFROM [EMP_WORK_INFO] AS [e]\r\nWHERE [e].[EMP_ID] = @__UserID_0"
+2022-12-10 13:48:08.777 +05:30[INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Web_API.Models.List.Work_Info, Web_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-12-10 13:48:08.777 +05:30[INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Web_API.Models.List.Work_Info, Web_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-12-10 13:48:08.781 +05:30[INF] Executed action "Web_API.Controllers.UserController.workProfile (Web_API)" in 174.1453ms
+2022-12-10 13:48:08.781 +05:30[INF] Executed action "Web_API.Controllers.UserController.workProfile (Web_API)" in 176.5299ms
+2022-12-10 13:48:08.782 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.workProfile (Web_API)"'
+2022-12-10 13:48:08.782 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.workProfile (Web_API)"'
+2022-12-10 13:48:08.782 +05:30[INF] "Request finished in 174.6516ms 200 application/json; charset=utf-8"
+2022-12-10 13:48:08.782 +05:30[INF] "Request finished in 179.0039ms 200 application/json; charset=utf-8"
+2022-12-10 13:50:10.754 +05:30[INF] "Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/User/userProfile  "
+2022-12-10 13:50:10.754 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:50:10.755 +05:30[INF] "Request finished in 0.7742ms 204 "
+2022-12-10 13:50:10.766 +05:30[INF] "Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/User/workProfile  "
+2022-12-10 13:50:10.766 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:50:10.766 +05:30[INF] "Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/User/userProfile  "
+2022-12-10 13:50:10.766 +05:30[INF] "Request finished in 0.7956ms 204 "
+2022-12-10 13:50:10.766 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:50:10.767 +05:30[INF] "Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/User/workProfile  "
+2022-12-10 13:50:10.767 +05:30[INF] "Request finished in 0.5487ms 204 "
+2022-12-10 13:50:10.767 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:50:10.767 +05:30[INF] "Request finished in 0.401ms 204 "
+2022-12-10 13:50:10.784 +05:30[INF] "Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/User/UserLogout  "
+2022-12-10 13:50:10.784 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:50:10.784 +05:30[INF] "Request finished in 0.5952ms 204 "
+2022-12-10 13:50:10.788 +05:30[INF] "Request starting HTTP/2.0 POST https://localhost:44323/api/User/userProfile application/json 11"
+2022-12-10 13:50:10.789 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:50:10.789 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.UserProfile (Web_API)"'
+2022-12-10 13:50:10.789 +05:30[INF] Route matched with "{action = \"UserProfile\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult UserProfile(Web_API.Models.EmpWorkInfo)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-10 13:50:10.793 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-10 13:50:10.796 +05:30[INF] "Request starting HTTP/2.0 POST https://localhost:44323/api/User/workProfile application/json 11"
+2022-12-10 13:50:10.796 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:50:10.797 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.workProfile (Web_API)"'
+2022-12-10 13:50:10.797 +05:30[INF] Route matched with "{action = \"workProfile\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult workProfile(Web_API.Models.EmpWorkInfo)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-10 13:50:10.799 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-10 13:50:10.800 +05:30[INF] Executed DbCommand ("4"ms) [Parameters=["@__UserID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [e].[EMP_ID], [e].[ADDRESS], [e].[BLOOD_ID], [e].[CREATE_EMP_ID], [e].[DOB], [e].[EMAIL], [e].[EMP_CREATE_DATE], [e].[FRIST_NAME], [e].[GENDER], [e].[LANGUAGE], [e].[MOBILE], [e].[NAME_SURENAME], [e].[NIC], [e].[STATUS]\r\nFROM [EMP_INFO] AS [e]\r\nWHERE [e].[EMP_ID] = @__UserID_0"
+2022-12-10 13:50:10.801 +05:30[INF] "Request starting HTTP/2.0 POST https://localhost:44323/api/User/workProfile application/json 11"
+2022-12-10 13:50:10.801 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:50:10.801 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.workProfile (Web_API)"'
+2022-12-10 13:50:10.801 +05:30[INF] Route matched with "{action = \"workProfile\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult workProfile(Web_API.Models.EmpWorkInfo)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-10 13:50:10.802 +05:30[INF] Executed DbCommand ("2"ms) [Parameters=["@__UserID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [e].[ID], [e].[B_ID], [e].[D_ID], [e].[D/OF_A], [e].[D/OF_C], [e].[D/OF_JOIN], [e].[DESCRIPTION], [e].[EMP_ID], [e].[NFC_NUMBER], [e].[P_ID], [e].[RE_EMP_ID], [e].[W_T_ID]\r\nFROM [EMP_WORK_INFO] AS [e]\r\nWHERE [e].[EMP_ID] = @__UserID_0"
+2022-12-10 13:50:10.806 +05:30[INF] "Request starting HTTP/2.0 POST https://localhost:44323/api/User/userProfile application/json 11"
+2022-12-10 13:50:10.806 +05:30[INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Web_API.Models.List.User_Info, Web_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-12-10 13:50:10.806 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:50:10.807 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.UserProfile (Web_API)"'
+2022-12-10 13:50:10.807 +05:30[INF] Executed action "Web_API.Controllers.UserController.UserProfile (Web_API)" in 17.6865ms
+2022-12-10 13:50:10.807 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.UserProfile (Web_API)"'
+2022-12-10 13:50:10.807 +05:30[INF] Route matched with "{action = \"UserProfile\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult UserProfile(Web_API.Models.EmpWorkInfo)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-10 13:50:10.807 +05:30[INF] "Request finished in 18.9027ms 200 application/json; charset=utf-8"
+2022-12-10 13:50:10.807 +05:30[INF] "Request starting HTTP/2.0 POST https://localhost:44323/api/User/UserLogout application/json 24"
+2022-12-10 13:50:10.807 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:50:10.808 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.LogOut_User (Web_API)"'
+2022-12-10 13:50:10.808 +05:30[INF] Route matched with "{action = \"LogOut_User\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult LogOut_User(Web_API.Models.Pass)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-10 13:50:10.808 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-10 13:50:10.808 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-10 13:50:10.809 +05:30[INF] Executed DbCommand ("0"ms) [Parameters=["@__UserID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [e].[EMP_ID], [e].[ADDRESS], [e].[BLOOD_ID], [e].[CREATE_EMP_ID], [e].[DOB], [e].[EMAIL], [e].[EMP_CREATE_DATE], [e].[FRIST_NAME], [e].[GENDER], [e].[LANGUAGE], [e].[MOBILE], [e].[NAME_SURENAME], [e].[NIC], [e].[STATUS]\r\nFROM [EMP_INFO] AS [e]\r\nWHERE [e].[EMP_ID] = @__UserID_0"
+2022-12-10 13:50:10.810 +05:30[INF] Executed DbCommand ("2"ms) [Parameters=["@__userID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [p].[ID], [p].[BRANCH_ID], [p].[CREAT_DATE], [p].[CREAT_EMP_ID], [p].[EMP_ID], [p].[LAST_L_DATE_TIME], [p].[LOCK1], [p].[LOCK2], [p].[LOG_IN_OUT], [p].[PASS], [p].[Path], [p].[USER_NAME]\r\nFROM [PASS] AS [p]\r\nWHERE [p].[EMP_ID] = @__userID_0"
+2022-12-10 13:50:10.811 +05:30[INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Web_API.Models.List.User_Info, Web_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-12-10 13:50:10.812 +05:30[INF] Executed action "Web_API.Controllers.UserController.UserProfile (Web_API)" in 4.5868ms
+2022-12-10 13:50:10.812 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.UserProfile (Web_API)"'
+2022-12-10 13:50:10.812 +05:30[INF] "Request finished in 5.6506ms 200 application/json; charset=utf-8"
+2022-12-10 13:50:10.820 +05:30[INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Web_API.Models.List.Work_Info, Web_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-12-10 13:50:10.820 +05:30[INF] Executed action "Web_API.Controllers.UserController.workProfile (Web_API)" in 23.2449ms
+2022-12-10 13:50:10.820 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.workProfile (Web_API)"'
+2022-12-10 13:50:10.820 +05:30[INF] "Request finished in 24.1817ms 200 application/json; charset=utf-8"
+2022-12-10 13:50:10.821 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-10 13:50:10.825 +05:30[INF] Executed DbCommand ("4"ms) [Parameters=["@__UserID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [e].[ID], [e].[B_ID], [e].[D_ID], [e].[D/OF_A], [e].[D/OF_C], [e].[D/OF_JOIN], [e].[DESCRIPTION], [e].[EMP_ID], [e].[NFC_NUMBER], [e].[P_ID], [e].[RE_EMP_ID], [e].[W_T_ID]\r\nFROM [EMP_WORK_INFO] AS [e]\r\nWHERE [e].[EMP_ID] = @__UserID_0"
+2022-12-10 13:50:10.830 +05:30[INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Web_API.Models.List.Work_Info, Web_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-12-10 13:50:10.831 +05:30[INF] Executed action "Web_API.Controllers.UserController.workProfile (Web_API)" in 29.9991ms
+2022-12-10 13:50:10.832 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.workProfile (Web_API)"'
+2022-12-10 13:50:10.833 +05:30[INF] "Request finished in 32.2643ms 200 application/json; charset=utf-8"
+2022-12-10 13:50:10.838 +05:30[INF] Executing ObjectResult, writing value of type '"System.String"'.
+2022-12-10 13:50:10.839 +05:30[INF] Executed action "Web_API.Controllers.UserController.LogOut_User (Web_API)" in 30.8631ms
+2022-12-10 13:50:10.839 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.LogOut_User (Web_API)"'
+2022-12-10 13:50:10.839 +05:30[INF] "Request finished in 31.3278ms 200 text/plain; charset=utf-8"
+2022-12-10 13:50:26.453 +05:30[INF] "Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/User/userProfile  "
+2022-12-10 13:50:26.453 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:50:26.457 +05:30[INF] "Request finished in 4.0992ms 204 "
+2022-12-10 13:50:26.458 +05:30[INF] "Request starting HTTP/2.0 POST https://localhost:44323/api/User/userProfile application/json 11"
+2022-12-10 13:50:26.459 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:50:26.459 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.UserProfile (Web_API)"'
+2022-12-10 13:50:26.459 +05:30[INF] Route matched with "{action = \"UserProfile\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult UserProfile(Web_API.Models.EmpWorkInfo)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-10 13:50:26.460 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-10 13:50:26.463 +05:30[INF] Executed DbCommand ("2"ms) [Parameters=["@__UserID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [e].[EMP_ID], [e].[ADDRESS], [e].[BLOOD_ID], [e].[CREATE_EMP_ID], [e].[DOB], [e].[EMAIL], [e].[EMP_CREATE_DATE], [e].[FRIST_NAME], [e].[GENDER], [e].[LANGUAGE], [e].[MOBILE], [e].[NAME_SURENAME], [e].[NIC], [e].[STATUS]\r\nFROM [EMP_INFO] AS [e]\r\nWHERE [e].[EMP_ID] = @__UserID_0"
+2022-12-10 13:50:26.465 +05:30[INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Web_API.Models.List.User_Info, Web_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-12-10 13:50:26.465 +05:30[INF] Executed action "Web_API.Controllers.UserController.UserProfile (Web_API)" in 6.2519ms
+2022-12-10 13:50:26.465 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.UserProfile (Web_API)"'
+2022-12-10 13:50:26.465 +05:30[INF] "Request finished in 7.0906ms 200 application/json; charset=utf-8"
+2022-12-10 13:50:29.120 +05:30[INF] "Request starting HTTP/2.0 POST https://localhost:44323/api/User/userProfile application/json 11"
+2022-12-10 13:50:29.120 +05:30[INF] CORS policy execution successful.
+2022-12-10 13:50:29.120 +05:30[INF] Executing endpoint '"Web_API.Controllers.UserController.UserProfile (Web_API)"'
+2022-12-10 13:50:29.121 +05:30[INF] Route matched with "{action = \"UserProfile\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult UserProfile(Web_API.Models.EmpWorkInfo)" on controller "Web_API.Controllers.UserController" ("Web_API").
+2022-12-10 13:50:29.122 +05:30[INF] Entity Framework Core "3.1.30" initialized '"HRMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2022-12-10 13:50:29.123 +05:30[INF] Executed DbCommand ("0"ms) [Parameters=["@__UserID_0='?' (DbType = Int32)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SELECT TOP(1) [e].[EMP_ID], [e].[ADDRESS], [e].[BLOOD_ID], [e].[CREATE_EMP_ID], [e].[DOB], [e].[EMAIL], [e].[EMP_CREATE_DATE], [e].[FRIST_NAME], [e].[GENDER], [e].[LANGUAGE], [e].[MOBILE], [e].[NAME_SURENAME], [e].[NIC], [e].[STATUS]\r\nFROM [EMP_INFO] AS [e]\r\nWHERE [e].[EMP_ID] = @__UserID_0"
+2022-12-10 13:50:29.126 +05:30[INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[Web_API.Models.List.User_Info, Web_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2022-12-10 13:50:29.126 +05:30[INF] Executed action "Web_API.Controllers.UserController.UserProfile (Web_API)" in 5.7386ms
+2022-12-10 13:50:29.126 +05:30[INF] Executed endpoint '"Web_API.Controllers.UserController.UserProfile (Web_API)"'
+2022-12-10 13:50:29.127 +05:30[INF] "Request finished in 6.7802ms 200 application/json; charset=utf-8"

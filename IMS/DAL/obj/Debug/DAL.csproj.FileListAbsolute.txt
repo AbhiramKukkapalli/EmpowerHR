@@ -1,0 +1,14 @@
+F:\IMS\DAL\bin\Debug\DAL.dll
+F:\IMS\DAL\bin\Debug\DAL.pdb
+F:\IMS\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+F:\IMS\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+F:\IMS\DAL\obj\Debug\DAL.dll
+F:\IMS\DAL\obj\Debug\DAL.pdb
+F:\IMS\DAL\bin\Debug\DAL.dll.config
+F:\HRMS_Project\IMS\DAL\bin\Debug\DAL.dll.config
+F:\HRMS_Project\IMS\DAL\bin\Debug\DAL.dll
+F:\HRMS_Project\IMS\DAL\bin\Debug\DAL.pdb
+F:\HRMS_Project\IMS\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+F:\HRMS_Project\IMS\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+F:\HRMS_Project\IMS\DAL\obj\Debug\DAL.dll
+F:\HRMS_Project\IMS\DAL\obj\Debug\DAL.pdb
